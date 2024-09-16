@@ -4,7 +4,7 @@ description:
 keywords: 
 tags: 
 date: 2024-08-08T09:30:03+00:00
-canonicalURL: "https://canonical.url/to/page"
+# canonicalURL: "https://canonical.url/to/page"
 draft: false
 # images: 
 # weight: 1

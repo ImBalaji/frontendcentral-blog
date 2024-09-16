@@ -1,8 +1,9 @@
-baseURL: "https://frontendcentral.com/"
+baseURL: https://frontendcentral.com/
 languageCode: en-us
-title: ExampleSite
+title: FrontendCentral
 paginate: 5
 theme: ["PaperMod"]
+canonifyURLs: true
 
 outputs:
   home:
@@ -22,12 +23,14 @@ minify:
   minifyOutput: true
 
 params:
+  contact:
+    email: balaji2690@gmail.com
+  subtitle: Web technology blog
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Balaji
-  # author: ["Me", "You"] # multiple authors
+  title: FrontendCentral
+  description: FrontendCentral offers web development tutorials, tips, and articles on HTML, CSS, JavaScript, React, Vue, Laravel, and more. Learn web technologies, frameworks, and how to build websites and applications with our hands-on guides and community discussions.
+  keywords: [Web development, HTML, CSS, JavaScript, React, Vue, Laravel, TailwindCSS, TALL stack, web technology blog, frontend frameworks, backend frameworks, tutorials, website building, quick tips, web design, web applications, FrontendCentral]
+  author: Balaji  # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -94,11 +97,11 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "JFQyXCdUT2kQu_DZhLCIlI1pq4hftQQsYj_JQ8D24gE"
     bing:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "627B9B86A68C700F16421E73888F3DBE"
     yandex:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "29ecec37ab3081dc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -106,8 +109,8 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/ImBalaji/frontendcentral-blog"
+    Text: "Suggest Changes" # edit text 
     appendFilePath: true # to append file path to Edit link
 
   # for search
@@ -131,10 +134,10 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 
