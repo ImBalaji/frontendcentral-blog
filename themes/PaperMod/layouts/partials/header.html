@@ -72,9 +72,9 @@
                 {{- $label_text -}}
             </a>
             {{- end }}
+           
             <div class="logo-switches">
                
-
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                 {{- with site.Home.Translations }}
