@@ -23,7 +23,8 @@
         {{- else }}
         <!-- <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
             height="{{- site.Params.label.iconHeight | default "30" -}}"> -->
-            
+
+        
         <img id="theme-logo" src="{{ site.Params.label.light_themed_icon | absURL }}" height="{{ site.Params.label.iconHeight | default "30" }}"  />
         {{- end -}}
         {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
@@ -62,11 +63,11 @@
 <script>
     const logo = document.getElementById('theme-logo');
     if (localStorage.getItem("pref-theme") === "dark") {        
-        logo.src= "{{ site.Params.label.dark_themed_icon | absURL }}";
+        logo.srcset= "{{ site.Params.label.dark_themed_icon | absURL }}";
         logo.alt = "FrontEnd Central logo";   
         
     } else if (localStorage.getItem("pref-theme") === "light") {
-        logo.src = "{{ site.Params.label.light_themed_icon | absURL }}";
+        logo.srcset = "{{ site.Params.label.light_themed_icon | absURL }}";
         logo.alt = "FrontEnd Central logo";            
     } 
-  </script> 
+</script>

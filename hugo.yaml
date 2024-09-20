@@ -59,7 +59,9 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "FC Frontend Central"
+    text: " "
+    light_themed_icon: "/img/FClogo-light.png"
+    dark_themed_icon: "/img/FClogo-dark.png"
     icon: "/apple-touch-icon.png"
     iconHeight: 35
 

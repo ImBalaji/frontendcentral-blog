@@ -1,5 +1,32 @@
+<script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById('theme-logo');
+        if (localStorage.getItem("pref-theme") === "dark") {        
+            logo.srcset= "{{ site.Params.label.dark_themed_icon | absURL }}";
+            logo.alt = "dark-themed-logo";   
+            
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            logo.srcset = "{{ site.Params.label.light_themed_icon | absURL }}";
+            logo.alt = "light-themed-logo";          
+        } 
+    });
+  
+    function toggleTheme() {    
+        const logo = document.getElementById('theme-logo');
+        if (localStorage.getItem("pref-theme") === "dark") {        
+            logo.srcset = "{{ site.Params.label.light_themed_icon | absURL }}";
+            logo.alt = "light-themed-logo";      
+            
+        } else if (localStorage.getItem("pref-theme") === "light") {        
+            logo.srcset= "{{ site.Params.label.dark_themed_icon | absURL }}";
+            logo.alt = "dark-themed-logo";   
+        } 
+    }
+  </script>
+
 {{- /* theme-toggle is enabled */}}
 {{- if (not site.Params.disableThemeToggle) }}
+
 {{- /* theme is light */}}
 {{- if (eq site.Params.defaultTheme "light") }}
 <script>
@@ -41,68 +68,14 @@
 
 <header class="header">
     <nav class="nav">
-        <div class="logo">
-            {{- $label_text := (site.Params.label.text | default site.Title) }}
-            {{- if site.Title }}
-            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-                {{- if site.Params.label.icon }}
-                {{- $img := resources.Get site.Params.label.icon }}
-                {{- if $img }}
-                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
-                    {{- if hugo.IsExtended -}}
-                        {{- $processableFormats = $processableFormats | append "webp" -}}
-                    {{- end -}}
-                    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
-                    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-                        {{- if site.Params.label.iconHeight }}
-                            {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
-                        {{ else }}
-                            {{- $img = $img.Resize "x30" }}
-                        {{- end }}
-                    {{- end }}
-                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
-                        height="{{- site.Params.label.iconHeight | default "30" -}}">
-                {{- else }}
-                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
-                    height="{{- site.Params.label.iconHeight | default "30" -}}">
-                {{- end -}}
-                {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
-                    {{ site.Params.label.iconSVG | safeHTML }}
-                {{- end -}}
-                {{- $label_text -}}
-            </a>
-            {{- end }}
-            <div class="logo-switches">
-               
 
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.Translations }}
-                <ul class="lang-switch">
-                    {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
-                    <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
-                            {{- .Lang | title -}}
-                            {{- end -}}
-                        </a>
-                    </li>
-                    {{- end -}}
-                    {{- end}}
-                </ul>
-                {{- end }}
-            </div>
-        </div>
+        {{ partial "logo.html" }}      
+
         {{- $currentPage := . }}
        
         <ul id="menu">
             {{- if (not site.Params.disableThemeToggle) }}
-            <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+            <button id="theme-toggle" accesskey="t" title="(Alt + T)" onclick="toggleTheme()">
                 <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -150,3 +123,5 @@
         </ul>
     </nav>
 </header>
+
+
