@@ -1,5 +1,32 @@
+<script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+        const logo = document.getElementById('theme-logo');
+        if (localStorage.getItem("pref-theme") === "dark") {        
+            logo.srcset= "{{ site.Params.label.dark_themed_icon | absURL }}";
+            logo.alt = "dark-themed-logo";   
+            
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            logo.srcset = "{{ site.Params.label.light_themed_icon | absURL }}";
+            logo.alt = "light-themed-logo";          
+        } 
+    });
+  
+    function toggleTheme() {    
+        const logo = document.getElementById('theme-logo');
+        if (localStorage.getItem("pref-theme") === "dark") {        
+            logo.srcset = "{{ site.Params.label.light_themed_icon | absURL }}";
+            logo.alt = "light-themed-logo";      
+            
+        } else if (localStorage.getItem("pref-theme") === "light") {        
+            logo.srcset= "{{ site.Params.label.dark_themed_icon | absURL }}";
+            logo.alt = "dark-themed-logo";   
+        } 
+    }
+  </script>
+
 {{- /* theme-toggle is enabled */}}
 {{- if (not site.Params.disableThemeToggle) }}
+
 {{- /* theme is light */}}
 {{- if (eq site.Params.defaultTheme "light") }}
 <script>
@@ -41,6 +68,10 @@
 
 <header class="header">
     <nav class="nav">
+
+
+        {{ partial "logo.html" }}      
+
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
@@ -98,11 +129,12 @@
                 {{- end }}
             </div>
         </div>
+
         {{- $currentPage := . }}
        
         <ul id="menu">
             {{- if (not site.Params.disableThemeToggle) }}
-            <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+            <button id="theme-toggle" accesskey="t" title="(Alt + T)" onclick="toggleTheme()">
                 <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -150,3 +182,5 @@
         </ul>
     </nav>
 </header>
+
+
