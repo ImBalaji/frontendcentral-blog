@@ -1,6 +1,6 @@
 baseURL: "https://www.frontendcentral.com/"
 languageCode: en-us
-title: Frontend Central
+title: "Frontend Central | Learn Web Development | HTML, CSS, JavaScript, Laravel Guides"
 paginate: 5
 theme: ["PaperMod"]
 canonifyURLs: true
@@ -19,6 +19,9 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
+  disableCSS: false
+  disableJS: false
+  disableHTML: false
 
 params:
   contact:
@@ -26,7 +29,7 @@ params:
   subtitle: "Web technology blog"
   env: production
   title: "Frontend Central"
-  description: "Frontend Central offers web development tutorials, tips, and articles on HTML, CSS, JavaScript, React, Vue, Laravel, and more. Learn web technologies, frameworks, and how to build websites and applications with our hands-on guides and community discussions."
+  description: "Frontend Central offers high-quality web development articles on HTML, CSS, JavaScript, React, Vue, Laravel, and more. Learn web technologies, frameworks, and how to build websites and applications with our hands-on guides and community discussions."
   keywords: [Web development, HTML, CSS, JavaScript, React, Vue, Laravel, TailwindCSS, TALL stack, web technology blog, frontend frameworks, backend frameworks, tutorials, website building, quick tips, web design, web applications, FrontendCentral]
   author: "Balaji"
   images: ["/img/android-chrome-512x512.png", "/img/android-chrome-192x192.png"]
@@ -52,6 +55,7 @@ params:
   tocopen: false
 
   assets:
+    icon: "/img/favicon.ico"
     favicon: "/img/favicon.ico"
     favicon16x16: "/img/favicon-16x16.png"
     favicon32x32: "/img/favicon-32x32.png"
