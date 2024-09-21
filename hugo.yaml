@@ -1,6 +1,6 @@
 baseURL: "https://www.frontendcentral.com/"
 languageCode: en-us
-title: Frontend Central
+title: "Frontend Central | Learn Web Development | HTML, CSS, JavaScript, Laravel Guides"
 paginate: 5
 theme: ["PaperMod"]
 canonifyURLs: true
@@ -19,6 +19,9 @@ buildExpired: false
 minify:
   disableXML: true
   minifyOutput: true
+  disableCSS: false
+  disableJS: false
+  disableHTML: false
 
 params:
   contact:
@@ -26,10 +29,10 @@ params:
   subtitle: "Web technology blog"
   env: production
   title: "Frontend Central"
-  description: "Frontend Central offers web development tutorials, tips, and articles on HTML, CSS, JavaScript, React, Vue, Laravel, and more. Learn web technologies, frameworks, and how to build websites and applications with our hands-on guides and community discussions."
+  description: "Frontend Central offers high-quality web development articles on HTML, CSS, JavaScript, React, Vue, Laravel, and more. Learn web technologies, frameworks, and how to build websites and applications with our hands-on guides and community discussions."
   keywords: [Web development, HTML, CSS, JavaScript, React, Vue, Laravel, TailwindCSS, TALL stack, web technology blog, frontend frameworks, backend frameworks, tutorials, website building, quick tips, web design, web applications, FrontendCentral]
   author: "Balaji"
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/img/android-chrome-512x512.png", "/img/android-chrome-192x192.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto
   disableThemeToggle: false
@@ -52,14 +55,15 @@ params:
   tocopen: false
 
   assets:
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    icon: "/img/favicon.ico"
+    favicon: "/img/favicon.ico"
+    favicon16x16: "/img/favicon-16x16.png"
+    favicon32x32: "/img/favicon-32x32.png"
+    apple_touch_icon: "/img/apple-touch-icon.png"
+    safari_pinned_tab: "/img/apple-touch-icon.png"
 
   label:
-    text: " "
+    text: ""
     light_themed_icon: "/img/FClogo-light.png"
     dark_themed_icon: "/img/FClogo-dark.png"
     icon: "/apple-touch-icon.png"
