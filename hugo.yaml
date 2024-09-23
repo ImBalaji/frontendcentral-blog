@@ -1,6 +1,6 @@
 baseURL: "https://frontendcentral.com/"
 languageCode: en-us
-title: "Frontend Central | Learn Web Development | HTML, CSS, JavaScript, Laravel Guides"
+title: "Frontend Central — Build Successful Websites with Expert Web Development & Guides"
 paginate: 5
 theme: ["PaperMod"]
 canonifyURLs: true
@@ -28,11 +28,11 @@ params:
     email: "balaji2690@gmail.com"
   subtitle: "Web technology blog"
   env: production
-  title: "Frontend Central | Learn Web Development | HTML, CSS, JavaScript, Laravel Guides"
-  description: "Frontend Central offers high-quality web development articles on HTML, CSS, JavaScript, React, Vue, Laravel, and more. Learn web technologies, frameworks, and how to build websites and applications with our hands-on guides and community discussions."
-  keywords: [Web development, HTML, CSS, JavaScript, React, Vue, Laravel, TailwindCSS, TALL stack, web technology blog, frontend frameworks, backend frameworks, tutorials, website building, quick tips, web design, web applications, FrontendCentral]
+  title: "Frontend Central — Build Successful Websites with Expert Web Development & Guides"
+  description: "Frontend Central offers expert web development services, helping build websites and guides on HTML, CSS, JavaScript, React, Vue, and Laravel."
+  keywords: [Web development, HTML, CSS, JavaScript, React, Laravel, TailwindCSS, Freelance web developer, web technology blog, website building, web design, web applications, Frontend Central blog]
   author: "Balaji"
-  images: ["/img/favicon-32x32.png"]
+  images: ["/img/apple-touch-icon.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto
   disableThemeToggle: false
@@ -71,15 +71,16 @@ params:
 
   homeInfoParams:
     Title: "Hi there 👋"
-    Content: "Welcome to my blog"
+    Content: "I'm Balaji. I help build websites, grow businesses, big and small. If that is what you want, contact me."
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/ImBalaji"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/balaji-sm/"
+    - name: x
+      url: "https://x.com/BalajiSM17"
+    
 
   analytics:
     google:
