@@ -30,11 +30,11 @@ params:
   env: production
   title: "Frontend Central — Build Successful Websites with Expert Web Development & Guides"
   description: "Frontend Central offers expert web development services, helping build websites and guides on HTML, CSS, JavaScript, React, Vue, and Laravel."
-  keywords: [Web development, HTML, CSS, JavaScript, React, Laravel, TailwindCSS, Freelance web developer, web technology blog, website building, web design, web applications, Frontend Central blog]
+  keywords: ["personal blog or website", "a photoblog", "a business website", "a professional portfolio", "a government website", "a magazine or news website", "an online community", "even a network of websites"]
   author: "Balaji"
   images: ["/img/apple-touch-icon.png"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto
+  defaultTheme: light
   disableThemeToggle: false
   prismSyntaxHighlighting: true
 
@@ -67,7 +67,7 @@ params:
     light_themed_icon: "/img/FClogo-light.png"
     dark_themed_icon: "/img/FClogo-dark.png"
     icon: "/apple-touch-icon.png"
-    iconHeight: 35
+    iconHeight: 29
 
   homeInfoParams:
     Title: "Hi there 👋"
@@ -113,11 +113,11 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: Categories
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
 
