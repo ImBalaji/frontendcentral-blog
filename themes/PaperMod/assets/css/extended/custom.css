@@ -11896,7 +11896,8 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   nav {
-    margin: 15px;
+    padding: 0.9% !important;
+    margin-inline: 150px;
   }
 }
 :root {
@@ -11906,6 +11907,10 @@ textarea.form-control-lg {
 nav, nav button {
   color: rgb(218, 218, 219) !important;
   background-color: rgb(29, 30, 32);
+}
+
+footer .pagination {
+  background-color: inherit;
 }
 
 ul {
