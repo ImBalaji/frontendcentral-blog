@@ -1,6 +1,6 @@
 baseURL: "https://frontendcentral.com/"
 languageCode: en-us
-title: "Frontend Central — Build Successful Websites with Expert Web Development & Guides"
+title: "Frontend Central"
 paginate: 5
 theme: ["PaperMod"]
 canonifyURLs: true
