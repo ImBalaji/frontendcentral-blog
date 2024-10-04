@@ -1,43 +1,21 @@
 ---
 title: 'Understanding the Similarity Principle of Gestalt Psychology in Design'
-description: 
-keywords: 
-tags: 
 date: 2024-07-22T09:30:03+00:00
-canonicalURL: "https://canonical.url/to/page"
+author: ["Balaji"]
+description: 
+keywords: [""]
+tags: 
+
 draft: false
 # images: 
-# weight: 1
+# weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
-showToc: true
-TocOpen: false
-hidemeta: false
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-UseHugoToc: false
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-comments: true
-socialIcons:
-  - name: "<platform>"
-    url: "<link>"
-  - name: "<platform 2>"
-    url: "<link2>"
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link    
 ---
 
 When objects share similar visual characteristics, our brains naturally perceive them as related, more organized, and harmonious within a design. This innate tendency to group similar items helps us quickly and efficiently interpret complex visual environments.

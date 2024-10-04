@@ -1,43 +1,21 @@
 ---
 title: 'Building Better Forms: A Guide to User-Friendly HTML Forms'
-description: 
-keywords: 
-tags: 
 date: 2024-06-17T10:30:03+00:00
-canonicalURL: "https://canonical.url/to/page"
+author: ["Balaji"]
+description: 
+keywords: [""]
+tags: 
+
 draft: false
 # images: 
-# weight: 1
+# weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
-showToc: true
-TocOpen: true
-hidemeta: false
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-UseHugoToc: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-comments: true
-socialIcons:
-  - name: "<platform>"
-    url: "<link>"
-  - name: "<platform 2>"
-    url: "<link2>"
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link    
 ---
 
 People want what lies

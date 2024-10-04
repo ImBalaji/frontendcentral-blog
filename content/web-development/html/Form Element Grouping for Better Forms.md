@@ -1,43 +1,21 @@
 ---
 title: 'Form Element Grouping'
-description: 
-keywords: 
-tags: 
 date: 2024-07-22T09:30:03+00:00
-canonicalURL: "https://canonical.url/to/page"
+author: ["Balaji"]
+description: 
+keywords: [""]
+tags: 
+
 draft: false
 # images: 
-# weight: 1
+# weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
-showToc: true
-TocOpen: false
-hidemeta: false
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-UseHugoToc: false
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-comments: true
-socialIcons:
-  - name: "<platform>"
-    url: "<link>"
-  - name: "<platform 2>"
-    url: "<link2>"
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link    
 ---
 
 In today's digital world, understanding your user base is crucial. Companies leverage data collected through forms to gain valuable insights into their customers' needs and preferences. This information allows them to tailor products and services more effectively, ultimately aiming to provide a better user experience. 

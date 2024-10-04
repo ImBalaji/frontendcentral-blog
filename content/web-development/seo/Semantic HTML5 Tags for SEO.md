@@ -2,47 +2,19 @@
 title: 'Semantic HTML5 Tags in 2024 for SEO'
 description: Learn how Semantic HTML5 can boost your website’s SEO and accessibility. Discover the essential HTML tags, the pitfalls of relying solely on CMS plugins, and best practices for creating SEO-friendly, accessible web content. Perfect for developers and website owners aiming to enhance their site's visibility and user experience. Start optimizing your web content today for better results!
 date: 2024-06-14T11:30:03+00:00
-# images: 
-# weight: 1
-# aliases: ["/first"]
 keywords: ["Semantic HTML5", "Technical SEO", "HTML5 SEO", "SEO for web developers", "HTML5 semantic elements", "Web accessibility and SEO", "HTML5 tags for SEO", "SEO-friendly HTML5", "SEO plugins for CMS", "Best HTML5 practices for SEO"]
 tags: ["HTML5", "SEO Best Practices", "Web Design"]
-author: "Balaji"
-socialIcons:
-  - name: "<platform>"
-    url: "<link>"
-  - name: "<platform 2>"
-    url: "<link2>"
-# author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: true
+author: ["Balaji"]
 draft: false
-hidemeta: false
-comments: false
-canonicalURL: "https://canonical.url/to/page"
-disableHLJS: true # to disable highlightjs
-disableShare: false
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-UseHugoToc: true
-# ShareButtons: ["linkedin", "x"]
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-comments: true
+# images: 
+# weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
+# aliases: ["/first"]
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 Every year, almost **_2.7 billion blog entries_** are written online annually, but almost <a href="https://ahrefs.com/blog/search-traffic-study/" title="Ahrefs study on search traffic" target="_blank" rel="noopener noreferrer">96% of them receive no traffic from Google's organic search results</a>.

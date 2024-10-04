@@ -1,43 +1,20 @@
 ---
 title: 'Level Up Your Forms With Essential HTML Form Attributes for a User-Friendly Experience'
-description: Unlock the full potential of your HTML forms with essential form attributes that enhance usability and functionality. From effortless autofill to customized validation, learn how to make your forms user-friendly and efficient.
+date: 2024-06-17T10:30:03+00:00
+description: 
 keywords: [HTML form attributes, form usability, autocomplete attribute, novalidate attribute, formnovalidate attribute, formenctype attribute, inputmode attribute, user experience, web forms]
 tags: ["HTML5", "Web Design", "UX Design", "Web Forms"]
-date: 2024-06-17T10:30:03+00:00
-canonicalURL: "https://canonical.url/to/page"
+author: ["Balaji"]
 draft: false
 # images: 
-# weight: 1
+# weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
-showToc: true
-TocOpen: true
-hidemeta: false
-disableShare: false
-disableHLJS: true
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-UseHugoToc: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-comments: true
-socialIcons:
-  - name: "<platform>"
-    url: "<link>"
-  - name: "<platform 2>"
-    url: "<link2>"
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link    
 ---
 
 The HTML `<form>` element is an **essential feature** for websites, enabling interaction and information gathering from users. However, the `<form>` element alone is merely a structural component; it becomes truly powerful and functional through the use of various attributes. These attributes enhance the form's usability, accessibility, and overall user experience.

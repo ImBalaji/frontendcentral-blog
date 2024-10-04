@@ -31,7 +31,8 @@ params:
   title: "Frontend Central — Build Successful Websites with Expert Web Development & Guides"
   description: "Frontend Central offers expert web development services, helping build websites and guides on HTML, CSS, JavaScript, React, Vue, and Laravel."
   keywords: ["personal blog or website", "a photoblog", "a business website", "a professional portfolio", "a government website", "a magazine or news website", "an online community", "even a network of websites"]
-  author: "Balaji"
+  author: ["Balaji"]
+  about_url: about
   images: ["/img/apple-touch-icon.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: light
@@ -42,17 +43,20 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  disableShare: false
+  disableHLJS: false
+  comments: true
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  searchHidden: false
+  showtoc: true
+  tocopen: true
 
   assets:
     icon: "/img/favicon.ico"
@@ -80,7 +84,6 @@ params:
       url: "https://www.linkedin.com/in/balaji-sm/"
     - name: x
       url: "https://x.com/BalajiSM17"
-    
 
   analytics:
     google:
@@ -96,9 +99,9 @@ params:
     hiddenInSingle: true
 
   editPost:
-    URL: "https://github.com/ImBalaji/frontendcentral-blog"
-    Text: "Suggest Changes"
-    appendFilePath: true
+    URL: "https://github.com/ImBalaji/frontendcentral-blog/blob/master/content/"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 
   fuseOpts:
     isCaseSensitive: false
