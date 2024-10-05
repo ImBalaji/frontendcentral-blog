@@ -1,9 +1,13 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
-    <header class="entry-header">
+    <!-- <img src="/img/Balaji.png" class="img-thumbnail" width="200" height="200" alt="..."> -->
+
+    <!-- <header class="entry-header"> --> <!-- Commented-->
+    <header class="h1">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="entry-content">
+    <!-- <div class="entry-content lead"> -->
+    <div class="lead mb-3">
         {{ .Content | markdownify }}
     </div>
     <footer class="entry-footer">

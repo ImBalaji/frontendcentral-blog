@@ -26,11 +26,11 @@ minify:
 params:
   contact:
     email: "balaji2690@gmail.com"
-  subtitle: "Web technology blog"
+  subtitle: "Building Websites, Boosting SEO, and Powering Your Online Presence"
   env: production
-  title: "Frontend Central — Build Successful Websites with Expert Web Development & Guides"
-  description: "Frontend Central offers expert web development services, helping build websites and guides on HTML, CSS, JavaScript, React, Vue, and Laravel."
-  keywords: ["personal blog or website", "a photoblog", "a business website", "a professional portfolio", "a government website", "a magazine or news website", "an online community", "even a network of websites"]
+  title: "Frontend Central — Your Guide to Building Websites, SEO, and Web Development"
+  description: "Learn how to build websites, master website development, and optimize your site with Google SEO at FrontendCentral.com. Get expert tips on creating online stores, building business websites, and starting your own profitable website from scratch."
+  keywords: [how to build websites, website development, how to create a website, website builder for small business, google seo, hire web developer, best website builder for service business, seo services, website builder for photographers, how to make a website for my business, how to create my own online store, build a website from scratch for free, top freelance websites, freelance web designer, how to make my business online, build a google website for business]
   author: ["Balaji"]
   about_url: about
   images: ["/img/apple-touch-icon.png"]
@@ -73,9 +73,15 @@ params:
     icon: "/apple-touch-icon.png"
     iconHeight: 29
 
+  # homeInfoParams:
+  #   Title: "Hi there 👋"
+  #   Content: "I'm Balaji. I help build websites, grow businesses, big and small. If that is what you want, contact me."
+
   homeInfoParams:
-    Title: "Hi there 👋"
-    Content: "I'm Balaji. I help build websites, grow businesses, big and small. If that is what you want, contact me."
+    Title: "Build Websites, Optimize SEO, and Grow Your Business"
+    Content: "Hi, I'm Balaji, a professional web developer helping create websites that stand out. 
+     Whether you're looking to build a small business website, create an online store, or optimize your site with Google SEO, I can help. 
+     From website builders for service businesses to free website solutions, I offer everything you need—SEO services, domain setup, and more. Contact me to start building your website from scratch or improve your current one."
 
   socialIcons:
     - name: github
