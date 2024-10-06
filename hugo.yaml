@@ -81,7 +81,8 @@ params:
     Title: "Build Websites, Optimize SEO, and Grow Your Business"
     Content: "Hi, I'm Balaji, a professional web developer helping create websites that stand out. 
      Whether you're looking to build a small business website, create an online store, or optimize your site with Google SEO, I can help. 
-     From website builders for service businesses to free website solutions, I offer everything you need—SEO services, domain setup, and more. Contact me to start building your website from scratch or improve your current one."
+     From website builders for service businesses to free website solutions, I offer everything you need—SEO services, domain setup, and more.
+     Contact me to start building your website."
 
   socialIcons:
     - name: github
@@ -90,6 +91,8 @@ params:
       url: "https://www.linkedin.com/in/balaji-sm/"
     - name: x
       url: "https://x.com/BalajiSM17"
+    - name: email
+      url: "mailto:balaji2690@gmail.com"
 
   analytics:
     google:
