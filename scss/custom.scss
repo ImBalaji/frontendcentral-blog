@@ -29,6 +29,7 @@ $lead-font-size: $font-size-base * 1.2;
 @import "../bootstrap/scss/grid";
 @import "../bootstrap/scss/helpers";
 @import "../bootstrap/scss/navbar";
+@import "../bootstrap/scss/card";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../bootstrap/scss/utilities/api";
@@ -79,6 +80,16 @@ $lead-font-size: $font-size-base * 1.2;
             height: 35px;
         }
     }
+
+    .entry-content {
+        // list.html
+        font-size: 19px !important;
+    }
+
+    // .home-info .entry-content {
+    //     // home_info.html
+    //     font-size: 20px !important;
+    // }
  }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -119,6 +130,23 @@ a:hover {
     -webkit-box-decoration-break: clone !important;
 }
 
+.entry-content {
+    font-size: 16.75px;
+}
+
+// .home-info .entry-content {
+//     // home_info.html
+//     font-size: 20px !important;
+// }
+
+.entry-link:hover .entry-hint-parent {
+    color: var(--highlight-color) !important;
+}
+
+.entry-link:hover .entry-content, .entry-link:hover .entry-footer {
+    color: var(--primary) !important;
+}
+
 /* Dark theme */
 button.navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
@@ -131,8 +159,12 @@ button.navbar-toggler .navbar-toggler-icon {
 .nav-link {
     color: grey !important;
     &:hover {
-        color: orange !important;
+        color: var(--highlight-color) !important;
     }
+}
+
+.social-icons a:hover {
+    color: var(--highlight-color) !important;
 }
 
 .list-inline-item {

@@ -16,6 +16,7 @@
     --code-bg: rgb(245, 245, 245);
     --border: rgb(125, 125, 125);
     --nav-bg: rgb(29, 30, 32);
+    --highlight-color: rgb(229, 150, 3);
 }
 
 .dark {
@@ -38,3 +39,5 @@
 .dark.list {
     background: var(--theme);
 }
+
+
