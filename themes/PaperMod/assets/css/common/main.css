@@ -1,8 +1,13 @@
 .main {
     position: relative;
     padding: 0 1rem !important;
-    max-width: calc(var(--main-width) + var(--gap) * 2);
+    max-width: calc(var(--main-width) + var(--gap) * 0.01);
     margin: auto;
+}
+
+.main-single {
+    position: relative;
+    /* padding: 0 1rem; */
 }
 
 .page-header h1 {

@@ -39,7 +39,7 @@
 }
 
 .post-title-meta {
-  padding-top: 3.25rem;
+  padding-top: 2rem;
 }
 
 .post-meta .i18n_list li {
@@ -286,9 +286,9 @@
 .post-content blockquote {
   font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times, serif; /* Font family for quotes */
   font-size: 1.25rem; /* Slightly smaller size for better hierarchy */
-  line-height: 1.85; /* Improved readability */
+  line-height: 1.5; /* Improved readability */
   margin: 20px 0 10px 0;
-  word-spacing: 0.05rem;
+  /* word-spacing: 0.025rem; */
   padding: 12px 30px; /* Adjusted padding for a more spacious feel */
   border-inline-start: 5px solid var(--highlight-color);
   font-style: italic;
@@ -590,11 +590,4 @@ img.in-text {
 
 .did-you-know p {
   margin: 5px 0;
-}
-
-.did-you-know strong {
-  /* text-transform: capitalize !important; */
-  /* font-family: sans-serif; */
-  /* font-weight: 900 !important; */
-  /* padding: 0 0 20rem 0 !important; */
 }
