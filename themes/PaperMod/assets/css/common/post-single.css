@@ -1,25 +1,45 @@
+
 .page-header,
 .post-header {
-  margin: 24px auto var(--content-gap) auto;
+  margin: 0 auto var(--content-gap) auto;
+  padding: 2.5% !important;
+}
+
+.post-header {
+  background-color: var(--post-header-bg);
+}
+
+.main {
+  padding: 0; !important
 }
 
 .post-title {
-  font-family:  Source Serif pro, Georgia, Cambria, serif !important;
-  margin-bottom: 2px;
-  font-size: 45px;
+  font-family: 'Merriweather', Georgia , Cambria, serif;
+  margin-bottom: 1rem; /* Use rem for more responsive spacing */
+  font-size: 2.1rem; /* Adjusted for responsiveness */
+  line-height: 1.2; /* Improves readability for longer titles */
+  color: var(--highlight-color) !important;
 }
 
-.post-description {
-  margin-top: 10px;
-  margin-bottom: 5px;
+.post-description {  
+  margin-top: 1rem; 
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem; 
+  line-height: 1.5; 
+  color: var(--text-color); 
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif; 
 }
 
 .post-meta,
 .breadcrumbs {
-  color: var(--secondary);
-  font-size: 14px;
+  color: var(--post-meta);
+  font-size: 1.1rem;
   display: flex;
   flex-wrap: wrap;
+}
+
+.post-title-meta {
+  padding-top: 3.25rem;
 }
 
 .post-meta .i18n_list li {
@@ -30,27 +50,25 @@
 }
 
 .breadcrumbs a {
-  font-size: 16px;
+  font-size: 1.1rem;
+}
+
+.breadcrumbs a:hover {
+  color: rgb(218, 218, 219) !important;
 }
 
 .post-content {
   color: var(--content);
   font-family: Cambria, "Times New Roman", Times, serif !important;
-  /* font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif; */
-  /* font-family:"Source Serif Pro Variable", "Times New Roman", Times, serif !important; */
   font-size: 1.18rem;
   line-height: 1.5625;
   font-weight: 500 !important;
-  /* word-spacing: 1px; */
-
 }
 
 .post-content p em {
-  /* font-size: 19px; */
   font-family: Cambria, "Times New Roman", Times, serif;
   font-weight: 400;
   word-spacing: 2px;
-  /* color: #282d2a; */
 }
 
 .post-content strong {
@@ -109,15 +127,6 @@
 .post-content a:hover {
   text-decoration: underline;
 }
-
-/* .post-content a:visited {
-  color: rgb(194, 136, 248);
-  -webkit-box-shadow: 0 1px 0 rgb(194, 136, 248);
-  box-shadow: 0 1px 0 rgb(194, 136, 248);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-} */
-
 
 .toc a:hover {
   color: rgb(109, 176, 251); /* Hover color */
@@ -275,13 +284,17 @@
 }
 
 .post-content blockquote {
-  /* font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif; */
-  /* font-size: 1.3rem; */
-  margin: 20px 0 10px 0; 
-  padding: 2px 26px;
-  border-inline-start: 5px solid var(--tertiary);
-  /* font-style: italic; */
-  border-radius: 0 10px 10px 0; /* More pronounced rounded corners */
+  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times, serif; /* Font family for quotes */
+  font-size: 1.25rem; /* Slightly smaller size for better hierarchy */
+  line-height: 1.85; /* Improved readability */
+  margin: 20px 0 10px 0;
+  word-spacing: 0.05rem;
+  padding: 12px 30px; /* Adjusted padding for a more spacious feel */
+  border-inline-start: 5px solid var(--highlight-color);
+  font-style: italic;
+  /* border-radius: 0 10px 10px 0; More pronounced rounded corners */
+  background: var(--blockquote-bg); 
+  color: var(--blockquote-text-color); /* Custom text color for quotes */
 }
 
 .post-content hr {

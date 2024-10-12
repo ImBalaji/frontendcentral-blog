@@ -59,19 +59,31 @@ $lead-font-size: $font-size-base * 1.2;
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
 
+    nav {
+        padding-block: 2rem !important ;
+    }
+
     .navbar-brand { 
         // logo.html
         img {
             height: 33px;
         }
     }
+    
+    .post-title {
+        font-family: 'Merriweather', Georgia , Cambria, serif;
+        margin-bottom: 1rem; /* Use rem for more responsive spacing */
+        font-size: 2.6rem; /* Adjusted for responsiveness */
+        line-height: 1.2; /* Improves readability for longer titles */              
+        font-weight: 900;
+      }
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-    nav {
-        padding: 0.9% !important;
-        margin-inline: 150px;
+
+    .main {
+        position: relative;
     }
 
     .navbar-brand { 
@@ -86,14 +98,37 @@ $lead-font-size: $font-size-base * 1.2;
         font-size: 19px !important;
     }
 
-    // .home-info .entry-content {
-    //     // home_info.html
-    //     font-size: 20px !important;
-    // }
+    .post-title {
+        // single.html
+        font-family: 'Merriweather', Georgia , Cambria, serif;
+        margin-bottom: 1rem;
+        font-size: 2.9rem;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+
  }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+
+    .post-title {
+        // single.html
+        font-family: 'Merriweather', Georgia , Cambria, serif;
+        margin-bottom: 1rem;
+        font-size: 3.1rem;
+        font-weight: 900;
+        line-height: 1.2;
+        padding-block: 0.25rem !important;
+        padding-inline: 3rem !important;
+    }
+    .breadcrumbs {
+        padding-inline: 3rem !important;
+    }
+    .post-meta {
+        padding-inline: 3rem !important;
+    }   
+ }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) { }
@@ -101,6 +136,10 @@ $lead-font-size: $font-size-base * 1.2;
 
 :root {
     --bs-link-color-rgb: var(--primary) !important;
+}
+
+.hr-bg {
+    background: var(--soft-black) !important;
 }
 
 nav, nav button {
@@ -134,10 +173,12 @@ a:hover {
     font-size: 16.75px;
 }
 
-// .home-info .entry-content {
-//     // home_info.html
-//     font-size: 20px !important;
-// }
+.viewport-wrapper {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: var(--gap);
+}
 
 .entry-link:hover .entry-hint-parent {
     color: var(--highlight-color) !important;
@@ -172,7 +213,7 @@ button.navbar-toggler .navbar-toggler-icon {
 }
 
 .navbar-collapse {
-    background-color: var(--nav-bg) !important;
+    // background-color: var(--nav-bg) !important;
     color: var(--theme) !important;
     width: max-content;
     position: absolute;

@@ -55,7 +55,7 @@ params:
   hidemeta: false
   hideSummary: false
   searchHidden: false
-  showtoc: true
+  showtoc: false
   tocopen: true
 
   assets:

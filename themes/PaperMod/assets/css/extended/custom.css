@@ -7562,14 +7562,23 @@ progress {
   }
 }
 @media (min-width: 768px) {
+  nav {
+    padding-block: 2rem !important;
+  }
   .navbar-brand img {
     height: 33px;
   }
+  .post-title {
+    font-family: "Merriweather", Georgia, Cambria, serif;
+    margin-bottom: 1rem; /* Use rem for more responsive spacing */
+    font-size: 2.6rem; /* Adjusted for responsiveness */
+    line-height: 1.2; /* Improves readability for longer titles */
+    font-weight: 900;
+  }
 }
 @media (min-width: 992px) {
-  nav {
-    padding: 0.9% !important;
-    margin-inline: 150px;
+  .main {
+    position: relative;
   }
   .navbar-brand img {
     height: 35px;
@@ -7577,9 +7586,37 @@ progress {
   .entry-content {
     font-size: 19px !important;
   }
+  .post-title {
+    font-family: "Merriweather", Georgia, Cambria, serif;
+    margin-bottom: 1rem;
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 1200px) {
+  .post-title {
+    font-family: "Merriweather", Georgia, Cambria, serif;
+    margin-bottom: 1rem;
+    font-size: 3.1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    padding-block: 0.25rem !important;
+    padding-inline: 3rem !important;
+  }
+  .breadcrumbs {
+    padding-inline: 3rem !important;
+  }
+  .post-meta {
+    padding-inline: 3rem !important;
+  }
 }
 :root {
   --bs-link-color-rgb: var(--primary) !important;
+}
+
+.hr-bg {
+  background: var(--soft-black) !important;
 }
 
 nav, nav button {
@@ -7611,6 +7648,13 @@ a:hover {
 
 .entry-content {
   font-size: 16.75px;
+}
+
+.viewport-wrapper {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
 }
 
 .entry-link:hover .entry-hint-parent {
@@ -7646,7 +7690,6 @@ button.navbar-toggler .navbar-toggler-icon {
 }
 
 .navbar-collapse {
-  background-color: var(--nav-bg) !important;
   color: var(--theme) !important;
   width: max-content;
   position: absolute;
