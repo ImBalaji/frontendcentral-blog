@@ -4,7 +4,6 @@
 {{- if (and site.Params.profileMode.enabled .IsHome) }}
 {{- partial "index_profile.html" . }}
 {{- else }} {{/* if not profileMode */}}
-<div style="max-width: calc(var(--main-width) + var(--gap) * 2); margin: auto;">  {{/* Added to include width in home page */}}
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
@@ -120,7 +119,6 @@
 {{- end }}
 
 {{- end }}{{/* end profileMode */}}
-</div>
 
 {{- end }}{{- /* end main */ -}}
 

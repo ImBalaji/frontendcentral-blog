@@ -174,10 +174,10 @@ a:hover {
 }
 
 .viewport-wrapper {
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
-    padding: var(--gap);
+    // min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    // max-width: calc(var(--main-width) + var(--gap) * 2);
+    // margin: auto;
+    // padding: var(--gap);
 }
 
 .entry-link:hover .entry-hint-parent {
