@@ -1,10 +1,10 @@
 {{- define "main" }}
 
 <article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-    <div class="post-title-meta">
-      <h1 class="post-title entry-hint-parent fw-bolder">
+  <header>    
+    <div class="post-header post-title-meta">
+      {{ partial "breadcrumbs.html" . }}
+      <h1 class="post-title entry-hint-parent fw-bolder mt-4">
         {{ .Title }}
         {{- if .Draft }}
         <span class="entry-hint" title="Draft">
@@ -14,12 +14,7 @@
           </svg>
         </span>
         {{- end }}
-      </h1>
-      <!-- {{- if .Description }}
-      <div class="post-description">
-        {{ .Description }}
-      </div>
-      {{- end }} -->
+      </h1>    
       {{- if not (.Param "hideMeta") }}
       <div class="post-meta" style="font-family: 'Merriweather', Georgia , Cambria, serif;">
         {{- partial "post_meta.html" . -}}
@@ -29,9 +24,15 @@
       </div>
     </div>
     {{- end }}
+
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
   </header>
 
-  <div class="viewport-wrapper">
+  <div class="viewport-wrapper">    
     {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
     {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
     {{- if (.Param "ShowToc") }}

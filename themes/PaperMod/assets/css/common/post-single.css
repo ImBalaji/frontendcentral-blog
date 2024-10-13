@@ -2,11 +2,12 @@
 .page-header,
 .post-header {
   margin: 0 auto var(--content-gap) auto;
-  padding: 2.5% !important;
+  padding: 1.5rem !important;
 }
 
 .post-header {
   background-color: var(--post-header-bg);
+  margin-bottom: 2.5rem;
 }
 
 .main {
@@ -14,20 +15,22 @@
 }
 
 .post-title {
-  font-family: 'Merriweather', Georgia , Cambria, serif;
+  font-family: var(--post-fontfamily);
   margin-bottom: 1rem; /* Use rem for more responsive spacing */
   font-size: 2.1rem; /* Adjusted for responsiveness */
   line-height: 1.2; /* Improves readability for longer titles */
   color: var(--highlight-color) !important;
 }
 
-.post-description {  
-  margin-top: 1rem; 
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem; 
-  line-height: 1.5; 
-  color: var(--text-color); 
-  font-family: 'Roboto', 'Open Sans', Arial, sans-serif; 
+.post-description {
+  font-size: 1.3rem;
+  line-height: 1.58;
+  color: var(--secondary);
+  font-family: var(--post-fontfamily);
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--padding-wrapper-margin);
+  padding-bottom: 2.5rem;
 }
 
 .post-meta,
@@ -39,7 +42,7 @@
 }
 
 .post-title-meta {
-  padding-top: 2rem;
+  /* padding-top: 2%; */
 }
 
 .post-meta .i18n_list li {
@@ -57,12 +60,24 @@
   color: rgb(218, 218, 219) !important;
 }
 
-.post-content {
+/* .post-content {
   color: var(--content);
   font-family: Cambria, "Times New Roman", Times, serif !important;
   font-size: 1.18rem;
   line-height: 1.5625;
   font-weight: 500 !important;
+} */
+
+.post-content {
+  color: var(--content);
+  font-family: var(--post-fontfamily); /* Matches post-title and post-description */
+  font-size: 1.25rem; /* Slightly larger for better readability */
+  line-height: 1.7; /* Improved readability */
+  font-weight: 400; /* Consistent, not too bold */
+  margin: auto;
+  /* text-align: justify; */
+  padding: 0 1rem;
+  max-width: calc(var(--main-width) + var(--gap) * 2);
 }
 
 .post-content p em {

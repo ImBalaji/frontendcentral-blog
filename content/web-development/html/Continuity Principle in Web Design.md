@@ -2,7 +2,7 @@
 title: 'Applying the Continuity Principle in Web Design'
 date: 2024-08-08T09:30:03+00:00
 author: ["Balaji"]
-description: 
+description: ""
 keywords: [""]
 tags: 
 

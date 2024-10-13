@@ -22,6 +22,10 @@
     --blockquote-bg: rgba(0, 0, 0, 0.03);
     --post-header-bg: rgba(29, 30, 32, 0.9899);
     --post-meta: rgb(155, 156, 157);
+    --padding-wrapper-margin: 0 1rem;
+    --post-fontfamily: 'Lora', 'Georgia', serif;
+    /* --post-header-fontfamily: 'Lora', serif; */
+
 }
 
 .dark {
