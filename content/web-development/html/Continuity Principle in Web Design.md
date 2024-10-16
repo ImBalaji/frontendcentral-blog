@@ -72,16 +72,16 @@ In web design, continuous visual pathways, such as a consistent grid structure o
 
 ### Some Tips on Using the Continuity Principle
 
-  **1. Create Smooth Pathways**  
-  - Employ lines, curves, and alignment to guide the eye.
-  - Use white space to create visual flow.
+  1. **Create Smooth Pathways**
+      - Employ lines, curves, and alignment to guide the eye.
+      - Use white space to create visual flow.
 
-**2. Avoid Design Disruptions**
-* Maintain consistent direction and spacing.
-* Prevent visual clutter.
+  2. **Avoid Design Disruptions**
+      - Maintain consistent direction and spacing.
+      - Prevent visual clutter.
 
-**3. Balance with Other Principles**
-* Combine continuity with proximity, similarity, and hierarchy.
+  3. **Balance with Other Principles**
+      - Combine continuity with proximity, similarity, and hierarchy.
 
 ### Conclusion  
 The Continuity Principle empowers designers to create user-centered designs. By understanding and incorporating this principle, designers can effectively guide users through design layouts, fostering intuitive and engaging experiences.  

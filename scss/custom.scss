@@ -10,6 +10,15 @@
 @import "../bootstrap/scss/variables-dark";
 
 $lead-font-size: $font-size-base * 1.2;
+h3{
+    font-size: 2.1rem !important;
+    font-weight: bold !important;
+}
+h4{
+    font-size: 1.58rem !important;
+    font-weight: 600 !important;
+}
+
 
 // 4. Include any default map overrides here
 // 5. Include remainder of required parts
@@ -83,6 +92,9 @@ $lead-font-size: $font-size-base * 1.2;
         margin-bottom: 3rem;
         padding-inline: 5rem !important;
     }
+    .post-meta {
+        font-size: 1.1rem;
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -106,6 +118,7 @@ $lead-font-size: $font-size-base * 1.2;
 :root {
     --bs-link-color-rgb: var(--primary) !important;
 }
+
 
 // Custom classes
 .hr-bg {

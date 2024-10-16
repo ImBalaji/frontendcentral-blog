@@ -3,8 +3,8 @@
     --content-gap: 20px;
     --nav-width: 1024px;
     --soft-black: rgb(29, 30, 32);
-    --main-width: 720px; 
-    /* --main-width: 760px; */
+    /* --main-width: 720px;  */
+    --main-width: 740px;
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
@@ -23,7 +23,8 @@
     --post-header-bg: rgba(29, 30, 32, 0.9899);
     --post-meta: rgb(155, 156, 157);
     --padding-wrapper-margin: 0 1rem;
-    --post-fontfamily: 'Lora', 'Georgia', serif;
+    --post-fontfamily: 'Lora', 'Georgia', serif ;
+    /* --post-fontfamily: 'Lora', 'Georgia', serif; */
     /* --post-header-fontfamily: 'Lora', serif; */
 
 }

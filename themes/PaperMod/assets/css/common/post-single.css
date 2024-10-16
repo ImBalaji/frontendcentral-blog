@@ -36,7 +36,7 @@
 .post-meta,
 .breadcrumbs {
   color: var(--post-meta);
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -70,7 +70,8 @@
 
 .post-content {
   color: var(--content);
-  font-family: var(--post-fontfamily); /* Matches post-title and post-description */
+  font-family: var(--post-fontfamily); 
+  /* font-family: 'Merriweather', Georgia !important; */
   font-size: 1.25rem; /* Slightly larger for better readability */
   line-height: 1.7; /* Improved readability */
   font-weight: 400; /* Consistent, not too bold */
@@ -90,44 +91,48 @@
   font-weight: 650;
 }
 
+.post-content h1,
+.post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
   margin: 24px 0 20px;  
+  font-weight: bold;
+  font-family: 'Lora' !important;
 }
 
+
 .post-content h1 {
-  font-size: 44px;
-  margin: 40px auto 32px;
-  text-transform: capitalize !important;
+  font-size: 2.75rem; /* 44px / 16px */
+  margin: 2.5rem auto 2rem; /* 40px auto 32px */
+  text-transform: capitalize;
 }
 
 .post-content h2 {
-  font-size: 34px;
-  font-family: Source Serif pro, Georgia, Cambria, serif !important;
-  margin: 39px auto 14px;
+  font-size: 2.125rem; /* 34px / 16px */
+  margin: 2.4375rem auto 0.875rem; /* 39px auto 14px */
 }
 
 .post-content h3 {
-  font-size: 29px;
-  font-family: Source Serif pro, Georgia, Cambria, serif !important;
-  margin: 39px auto 14px;
+  font-size: 2.1rem; /* Already in rem */
+  margin: 2.4375rem auto 0.875rem; /* 39px auto 14px */
 }
 
 .post-content h4 {
-  font-size: 25px;  
-  margin-top: 40px;
+  font-size: 1.58rem; /* Already in rem */
+  margin-top: 2.5rem; /* 40px */
 }
 
 .post-content h5 {
-  font-size: 21px;
+  font-size: 1.3125rem; /* 21px / 16px */
   font-weight: 550;
 }
 
 .post-content h6 {
-  font-size: 12px;
+  font-size: 0.75rem; /* 12px / 16px */
 }
+
 
 .post-content a {
   color: rgb(109, 176, 251); /* Blue for unvisited links */
@@ -163,9 +168,12 @@
 .post-content dl,
 .post-content ol,
 .post-content p,
-.post-content figure,
-.post-content ul {
+.post-content figure, {
   margin-bottom: var(--content-gap);
+}
+
+.post-content ol {
+  list-style-type: number;
 }
 
 .post-content ol,
@@ -180,11 +188,8 @@
   /* font-family:  Source Serif pro, Georgia, Cambria, serif !important; */
 }
 
-.post-content li {
-  margin-top: 8px;
-}
-
 .post-content li p {
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -340,7 +345,8 @@
   color: var(--secondary);
   font-weight: bold;
   margin: 8px 0 30px 0;
-  font: italic smaller sans-serif;
+  /* font: italic smaller sans-serif; */
+  font: smaller sans-serif;
   padding: 0;
   text-align: center;  
   line-height: 21.5px;
@@ -413,14 +419,18 @@
 .share-buttons,
 .paginav {
   border-radius: var(--radius);
-  background: var(--code-bg);
   border: 1px solid var(--border);
+}
+
+.paginav {
+  background: var(--post-header-bg);
 }
 
 .post-tags a {
   display: block;
   padding: 0 14px;
   color: var(--secondary);
+  /* color: var(--highlight-color); */
   font-size: 14px;
   line-height: 34px;
   background: var(--code-bg);
@@ -442,6 +452,10 @@
 .share-buttons li,
 .share-buttons a {
   display: inline-flex;
+}
+
+.share-buttons a:hover {
+  background-color: var(--highlight-color);
 }
 
 .share-buttons a:not(:last-of-type) {
@@ -486,6 +500,7 @@ h6:hover .anchor {
 
 .paginav span:hover:not(.title) {
   box-shadow: 0 1px 0;
+  color: var(--highlight-color);
 }
 
 .paginav .next {
