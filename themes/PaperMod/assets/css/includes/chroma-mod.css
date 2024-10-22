@@ -10,6 +10,10 @@
     padding: 0 0 0 12px;
 }
 
+/* .highlight pre.chroma::before {
+    content: "javascript";
+} */
+
 .highlight pre.chroma code {
     padding: 8px 0;
 }

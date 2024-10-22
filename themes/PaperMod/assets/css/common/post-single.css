@@ -74,7 +74,7 @@
   /* font-family: 'Merriweather', Georgia !important; */
   font-size: 1.25rem; /* Slightly larger for better readability */
   line-height: 1.7; /* Improved readability */
-  font-weight: 400; /* Consistent, not too bold */
+  font-weight: 100; /* Consistent, not too bold */
   margin: auto;
   /* text-align: justify; */
   padding: 0 1rem;
@@ -522,7 +522,7 @@ img.in-text {
 }
 
 .note {
-  padding: 10px 15px;
+  padding: 10px 15px; 
   background-color: #e0f7fa;
   color: #006064;
   margin-top: 30px;
