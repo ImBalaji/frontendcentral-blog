@@ -81,6 +81,12 @@
   max-width: calc(var(--main-width) + var(--gap) * 2);
 }
 
+.post-content p{
+  font-size: 1.21rem;
+  hyphens: auto;
+  word-break: break-word;
+}
+
 .post-content p em {
   font-family: Cambria, "Times New Roman", Times, serif;
   font-weight: 400;
@@ -97,7 +103,7 @@
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  margin: 24px 0 20px;  
+  margin: 24px 0 10px;  
   font-weight: bold;
   font-family: 'Lora' !important;
 }
@@ -135,7 +141,7 @@
 
 
 .post-content a {
-  color: rgb(109, 176, 251); /* Blue for unvisited links */
+  color: DodgerBlue; // Blue for unvisited links
 
   /* -webkit-box-shadow: 0 1px 0; */
   /* box-shadow: 0 1px 0;  */
@@ -180,7 +186,8 @@
 .post-content ul {
   padding-inline-start: 20px;
   margin-block-start: 0.1rem !important;
-}
+  margin-bottom: 20px !important;
+} 
 
 .post-content ul ul,
 .post-content ol ul{
@@ -188,9 +195,13 @@
   /* font-family:  Source Serif pro, Georgia, Cambria, serif !important; */
 }
 
+.post-content li p::first-line {
+  /* color: var(--highlight-color); */
+  /* color: RoyalBlue !important; */
+  /* background-color: SlateGray; */
+}
 .post-content li p {
-  font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .post-content dl {
@@ -216,22 +227,30 @@
 }
 
 .post-content table {
-  margin-bottom: var(--content-gap);
+  margin-bottom: var(--content-gap);  
+}
+
+.post-content table tbody {
+  background-color: #efeeee;
+  color: rgba(0,0,0, 0.8);
+  font-family: Cambria, "Times New Roman", Times, serif !important;
 }
 
 .post-content table th,
 .post-content
   table:not(.highlighttable, .highlight table, .gist .highlight)
   td {
-    font-size: 16px;
+    font-size: 18px;
     min-width: 80px;
     padding: 8px 15px;
     line-height: 1.5;
-    border: 1px solid var(--border);
+    border: 1px solid #999;
 }
 
 .post-content table th {
   text-align: start;
+  background-color: #e9ccb1;
+  color: black; 
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
@@ -413,6 +432,7 @@
 
 .post-tags li {
   display: inline-block;
+  
 }
 
 .post-tags a,
@@ -522,7 +542,9 @@ img.in-text {
 }
 
 .note {
-  padding: 10px 15px; 
+  padding: 22px; 
+  hyphens: auto;
+  word-break: break-word;
   background-color: #e0f7fa;
   color: #006064;
   margin-top: 30px;
@@ -550,8 +572,7 @@ img.in-text {
   /* text-align: justify; Justify the text */
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   position: relative;
-  overflow: hidden;
-  
+  overflow: hidden; 
 }
 
 .warning {
@@ -584,16 +605,15 @@ img.in-text {
 }
 
 .did-you-know {
-  padding: 20px 25px;
+  padding: 20px;
   background-color: #fff8dc; /* Light yellow background */
-  color: #333; /* Dark text color for readability */
-  border-left: 6px solid #ffeb3b; /* Yellow border for emphasis */
-  /* margin-top: 20px; */
+  background-color: rgb(42, 41, 39);
+  color: var(--highlight-color);
+  border-left: 6px solid darkorange; /* Yellow border for emphasis */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.09); /* Subtle shadow */
   font-family: 'Lato', 'Trebuchet MS', sans-serif;
-  font-size: 1.15rem;
-  /* font-weight: 550;  */
+  font-size: 1.1rem;
 }
 
 .did-you-know ol li::marker {
@@ -612,12 +632,13 @@ img.in-text {
   font-size: 1.5em;
   margin-top: 0;
   font-weight: 700; /* Bold heading */
-  color: #ffeb3b; /* Yellow color to match border */
+  color: var(--highlight-color) !important;
   text-transform: capitalize !important;
   font-family: "Gill Sans", sans-serif;
-  /* text-transform: capitalize; */
 }
 
 .did-you-know p {
+  color: #fff3e0;
   margin: 5px 0;
+  font-size: 1.09rem;
 }
