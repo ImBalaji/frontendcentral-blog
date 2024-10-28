@@ -1,6 +1,6 @@
 ---
 title: 'Semantic HTML5 Tags in 2024 for SEO'
-description: To get your website to the top of Google, one key factor is optimizing your site's structure by using semantic HTML5 tags. Semantic components in your HTML layout help Search Engines better understand and rank your content, making them a fundamental part of SEO for your business. Whether you're working with freelance SEO marketing experts, using website builders for small businesses, or trying to design a website yourself, implementing these SEO-friendly elements can significantly improve your SEO optimisation for your website.
+description: Semantic components in your HTML layout help Search Engines better understand and rank your content, making them a fundamental part of SEO for your business. Whether you are working with freelance SEO marketing experts, using website builders for small businesses, or trying to design a website yourself, implementing these SEO-friendly elements can significantly improve your SEO optimisation for your website.
 date: 2024-10-26T11:30:03+00:00
 keywords: ["Semantic HTML5", "Technical SEO", "HTML5 SEO", "SEO for web developers", "HTML5 semantic elements", "Web accessibility and SEO", "HTML5 tags for SEO", "SEO-friendly HTML5", "SEO plugins for CMS", "Best HTML5 practices for SEO"]
 tags: ["HTML5", "SEO Best Practices", "Semantic Elements"]
@@ -19,7 +19,7 @@ cover:
 
 Every year, almost 2.7 billion blog entries are written online, but almost <a href="https://ahrefs.com/blog/search-traffic-study/" title="Ahrefs study on search traffic" target="_blank" rel="noopener noreferrer">96% of them receive no traffic from Google's organic search results</a>. This lack of visibility often stems from inadequate application of technical SEO during the design and development of websites, which is crucial to improving your page rank.
 
-**What is Semantic HTML5 Tags?**  
+## What is Semantic Markup in HTML ?
 Unlike generic tags like `<div>` or `<span>`, semantic HTML5 elements such as `<header>`, `<article>`, and `<footer>` will help Search Engines better understand the content of a web page, which in turn improves indexing and visibility, making it easier for Search Engines to determine the hierarchy and importance of different sections.
 
    <figure>
@@ -34,7 +34,7 @@ In this article, I will discuss on how <a style="box-shadow:none" href="#essenti
 Whether you are working with a white label SEO firm or simply looking to design your own website with a focus on SEO, Understanding Semantic HTML will be invaluable to your websites SEO.
 </div>
 
-## Why HTML5 Semantic are important?
+## How Semantic HTML5 Tags Help SEO?
 
 In January 2008, when HTML5 was released by the World Wide Web Consortium (<a href="https://www.w3.org" title="The World Wide Web Consortium (W3C)" target="_blank" rel="noopener noreferrer">W3C</a>). Its primary goal was to keep the web language easily readable by humans and interpretable by computers. As a result of this, new <a href="https://www.w3.org/wiki/HTML/New_HTML5_Elements" title="New Elements Introducted by W3C in HTML5" target="_blank" rel="noopener noreferrer">syntactic sugar HTML Elements</a> were introduced.<br>
 This way, HTML semantic elements became the standard (natural) way of enabling Search Engine crawlers to understand what each section of a page is about. This allowed Search Engine algorithms to better analyze and process the content, rank (index) it, and render it in search results.
@@ -78,7 +78,7 @@ Developers can create flexible layouts using the viewport meta tag (`<meta name=
    </head>   
    ```
 
-## Essential Semantic HTML5 Elements
+## Most Essential Semantic HTML5 Elements
 
 There are more than 100 semantic elements declared and defined by the [WHATWG group](https://html.spec.whatwg.org/). I prefer, below are the **MUST** include HTML elements that will help Search Engines analyze and discover the contents of a website based on the enclosed HTML tag.
 
@@ -155,7 +155,20 @@ The `<footer>` element serves as the closing section of a page or section, often
 
 Basically each HTML Element are segregated based on the categories (Sectioning content, heading content, phrasing content, embedded content, interactive content) they belong in different sections of the website.
 
-   <div>
+<style>
+  @media (min-width: 576px) {
+   .Semantic-HTML-Tags-For-SEO {
+      display: none;
+   }
+   }
+
+   @media (min-width: 992px) {
+   .Semantic-HTML-Tags-For-SEO {
+      display: block;
+   }
+   }
+</style>
+   <div class="Semantic-HTML-Tags-For-SEO">   
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-250 -150 1000 288" width="1000" height="288">
 
    <style type="text/css">
@@ -444,7 +457,8 @@ Basically each HTML Element are segregated based on the categories (Sectioning c
    </div>
 
 <br>
-<div class="did-you-know">
+
+<div class="did-you-know" >
 <h3>Did You Know</h3>
 <ol>
 <li><strong>Negative Impact on SEO</strong>
