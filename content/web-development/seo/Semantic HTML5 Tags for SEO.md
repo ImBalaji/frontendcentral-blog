@@ -10,9 +10,9 @@ draft: false
 # weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "/img/Semantic_html_vs_nonSemantic_html.webp" # image path/url
+    alt: "Comparison of Semantic and Non-Semantic HTML Elements" # alt text
+    caption: "HTML5 Semantic help Search Engines with Better SEO" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 ---
@@ -23,14 +23,14 @@ Every year, almost 2.7 billion blog entries are written online, but almost <a hr
 Unlike generic tags like `<div>` or `<span>`, semantic HTML5 elements such as `<header>`, `<article>`, and `<footer>` will help Search Engines better understand the content of a web page, which in turn improves indexing and visibility, making it easier for Search Engines to determine the hierarchy and importance of different sections.
 
    <figure>
-      <img src="/img/Semantic_html_vs_nonSemantic_html.webp" alt="Comparison of Semantic and Non-Semantic HTML Elements" width="98%" height="80%"/>
+      <img src="/img/Semantic_html_vs_nonSemantic_html.webp" alt="Comparison of Semantic and Non-Semantic HTML Elements" width="auto" height="auto"/>
       <figcaption>HTML5 Semantic help Search Engines with Better SEO.</figcaption>
    </figure> 
 
 In this article, I will discuss on how <a style="box-shadow:none" href="#essential-html5-semantic-tags-to-use-in-websites" title="Usage of HTML5 semantic elements is an important factor for technical SEO">semantic HTML5 tags</a> enhance technical SEO and provide a list of essential tags you should always use when building or updating your site.
 
 <div class="note">
-<strong>Note:</strong>  </br>
+<strong>Note:</strong><br>
 Whether you are working with a white label SEO firm or simply looking to design your own website with a focus on SEO, Understanding Semantic HTML will be invaluable to your websites SEO.
 </div>
 
@@ -48,7 +48,7 @@ Visually impaired users use <a href="https://www.afb.org/blindness-and-low-visio
    <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener noreferrer">Google Lighthouse</a> compares websites content against the Web Content Accessibility Guidelines and generates a score between 0 and 100.  
 
    <figure>
-      <img src="/img/google_lighthouse_accessibility.webp" alt="Google Lighthouse Accessibility Score of Website" width="98%" height="80%"/>
+      <img src="/img/google_lighthouse_accessibility.webp" alt="Google Lighthouse Accessibility Score of Website" width="auto" height="auto"/>
       <figcaption>Lighthouse Accessibility Score for Frontend-Central Website</figcaption>
    </figure> 
 
@@ -78,11 +78,12 @@ Developers can create flexible layouts using the viewport meta tag (`<meta name=
    </head>   
    ```
 
-## Most Essential Semantic HTML5 Elements
+## Key Semantic HTML5 Elements You Should Know
 
 There are more than 100 semantic elements declared and defined by the [WHATWG group](https://html.spec.whatwg.org/). I prefer, below are the **MUST** include HTML elements that will help Search Engines analyze and discover the contents of a website based on the enclosed HTML tag.
 
 - `<header>`
+- `<h1>-<h6>`
 - `<nav>`
 - `<main>`
 - `<article>`
@@ -97,6 +98,18 @@ The `<header>` element serves as the top section of a page or section, typically
          <h1>Title</h1>
          <nav>Home | About | Contact</nav>
       </header>
+   ```
+
+### `<h1>-<h6>`: Heading Elements
+Headings give both your visitors and Search Engines information about the content's hierarchy and relevancy. The `<h1>` to `<h6>` HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>` is the lowest. 
+   
+   ```html
+      <h1>Heading level 1</h1>
+      <h2>Heading level 2</h2>
+      <h3>Heading level 3</h3>
+      <h4>Heading level 4</h4>
+      <h5>Heading level 5</h5>
+      <h6>Heading level 6</h6>
    ```
 
 ### `<nav>`: Navigation Element
@@ -151,40 +164,16 @@ The `<footer>` element serves as the closing section of a page or section, often
       </footer>
    ```
 
+
 ## Other Semantic HTML5 Elements to Know
 
-Basically each HTML Element are segregated based on the categories (Sectioning content, heading content, phrasing content, embedded content, interactive content) they belong in different sections of the website.
+Basically HTML Elements are grouped based on their categories they belong in different sections of the website. 
 
-<style>
-  @media (min-width: 576px) {
-   .Semantic-HTML-Tags-For-SEO {
-      display: none;
-   }
-   }
-
-   @media (min-width: 992px) {
-   .Semantic-HTML-Tags-For-SEO {
-      display: block;
-   }
-   }
-</style>
-   <div class="Semantic-HTML-Tags-For-SEO">   
+<style> @media (max-width: 575px) { .hide-on-mobile { display: none; } } </style>
+<div class="hide-on-mobile mb-5">   
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-250 -150 1000 288" width="1000" height="288">
 
-   <style type="text/css">
-      svg     { font: bold 18px sans-serif; text-anchor: middle; }
-      svg ellipse { fill: #3c790a; stroke: #000000; opacity: 0.67; }
-      svg text    { fill: #ffffff; pointer-events: none; }
-      svg ellipse:hover { stroke-width: 5px; }
-      svg ellipse:not(:hover) + foreignObject { display: none; }
-      svg div { font: 14px sans-serif; }
-      svg h1 { margin: 0 0 0.25em 0; padding: 0; font: 900 27px sans-serif; }
-      svg ul { margin: 0; padding: 0 0 0 1em; }
-      svg li { display: inline; margin: 0; padding: 0; line-height: 1.5; }
-      svg li:not(:last-child):after { content: ', '; }
-      svg span { font: italic 14px sans-serif; }
-      svg code { font: 1em monospace; color: #CE3C05; }
-      svg p { margin: 0.75em 0 0 0; padding: 0 0 0 1em; font: italic 14px sans-serif; }
+   <style type="text/css">svg { font: bold 18px sans-serif; text-anchor: middle; }   svg ellipse { fill: #3c790a; stroke: #000000; opacity: 0.67; }   svg text    { fill: #ffffff; pointer-events: none; }   svg ellipse:hover { stroke-width: 5px; }   svg ellipse:not(:hover) + foreignObject { display: none; }   svg div { font: 14px sans-serif; }   svg h1 { margin: 0 0 0.25em 0; padding: 0; font: 900 27px sans-serif; }   svg ul { margin: 0; padding: 0 0 0 1em; }   svg li { display: inline; margin: 0; padding: 0; line-height: 1.5; }   svg li:not(:last-child):after { content: ', '; }   svg span { font: italic 14px sans-serif; }   svg code { font: 1em monospace; color: #CE3C05; }   svg p { margin: 0.75em 0 0 0; padding: 0 0 0 1em; font: italic 14px sans-serif; }
    </style>
    <g class="a" transform="translate(2, -3)">
    <ellipse rx="244" ry="132"/>
@@ -286,175 +275,182 @@ Basically each HTML Element are segregated based on the categories (Sectioning c
    </foreignObject>
    <text x="10" y="-94">Flow</text>
    </g>
-         <g class="b" transform="translate(127, -48.5)">
-         <ellipse rx="75" ry="42.5"/>
-         <foreignObject x="250" y="-150" width="500" height="288" transform="translate(-127, 48.5)">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            <h1>Heading content</h1>
-            <ul>
-            <li><code>h1</code></li>
-            <li><code>h2</code></li>
-            <li><code>h3</code></li>
-            <li><code>h4</code></li>
-            <li><code>h5</code></li>
-            <li><code>h6</code></li>
-            <li><code>hgroup</code></li>
-            </ul>
-            </div>
-         </foreignObject>
-         <text x="2" y="6">Heading</text>
-         </g>
-         <g class="c" transform="translate(125, 42)">
-         <ellipse rx="75" ry="42.5"/>
-         <foreignObject x="250" y="-150" width="500" height="288" transform="translate(-125, -42)">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            <h1>Sectioning content</h1>
-            <ul>
-            <li><code>article</code></li>
-            <li><code>aside</code></li>
-            <li><code>nav</code></li>
-            <li><code>section</code></li>
-            </ul>
-            </div>
-         </foreignObject>
-         <text x="1" y="5">Sectioning</text>
-         </g>
-         <g class="d" transform="translate(-113, 78)">
-         <ellipse rx="117" ry="47" transform="rotate(-15)"/>
-         <foreignObject x="250" y="-150" width="500" height="288" transform="translate(113, -78)">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            <h1>Metadata content</h1>
-            <ul>
-            <li><code>base</code></li>
-            <li><code>link</code></li>
-            <li><code>meta</code></li>
-            <li><code>noscript</code></li>
-            <li><code>script</code></li>
-            <li><code>style</code></li>
-            <li><code>template</code></li>
-            <li><code>title</code></li>
-            </ul>
-            </div>
-         </foreignObject>
-         <text x="-4" y="8">Metadata</text>
-         </g>
-         <g class="e" transform="translate(-128, -34)">
-         <ellipse rx="94" ry="51"/>
-         <foreignObject x="250" y="-150" width="500" height="288" transform="translate(128, 34)">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            <h1>Interactive content</h1>
-            <ul>
-            <li><code>a</code></li>
-            <li><code>audio</code></li>
-            <li><code>button</code></li>
-            <li><code>details</code></li>
-            <li><code>embed</code></li>
-            <li><code>iframe</code></li>
-            <li><code>img</code></li>
-            <li><code>input</code></li>
-            <li><code>keygen</code></li>
-            <li><code>label</code></li>
-            <li><code>object</code></li>
-            <li><code>select</code></li>
-            <li><code>textarea</code></li>
-            <li><code>video</code></li>
-            </ul>
-            </div>
-         </foreignObject>
-         <text x="-36" y="5">Interactive</text>
-         </g>
-         <g class="f" transform="translate(-40.5, -5)">
-         <ellipse rx="76.5" ry="80"/>
-         <foreignObject x="250" y="-150" width="500" height="288" transform="translate(40.5, 5)">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            <h1>Phrasing content</h1>
-            <ul>
-            <li><code>a</code></li>
-            <li><code>abbr</code></li>
-            <li><code>area</code></li>
-            <li><code>audio</code></li>
-            <li><code>b</code></li>
-            <li><code>bdi</code></li>
-            <li><code>bdo</code></li>
-            <li><code>br</code></li>
-            <li><code>button</code></li>
-            <li><code>canvas</code></li>
-            <li><code>cite</code></li>
-            <li><code>code</code></li>
-            <li><code>data</code></li>
-            <li><code>date</code></li>
-            <li><code>datalist</code></li>
-            <li><code>del</code></li>
-            <li><code>dfn</code></li>
-            <li><code>em</code></li>
-            <li><code>embed</code></li>
-            <li><code>i</code></li>
-            <li><code>iframe</code></li>
-            <li><code>img</code></li>
-            <li><code>input</code></li>
-            <li><code>ins</code></li>
-            <li><code>kbd</code></li>
-            <li><code>keygen</code></li>
-            <li><code>label</code></li>
-            <li><code>link</code></li>
-            <li><code>map</code></li>
-            <li><code>mark</code></li>
-            <li><code>math</code></li>
-            <li><code>meta</code></li>
-            <li><code>meter</code></li>
-            <li><code>noscript</code></li>
-            <li><code>object</code></li>
-            <li><code>output</code></li>
-            <li><code>picture</code></li>
-            <li><code>progress</code></li>
-            <li><code>q</code></li>
-            <li><code>ruby</code></li>
-            <li><code>s</code></li>
-            <li><code>samp</code></li>
-            <li><code>script</code></li>
-            <li><code>select</code></li>
-            <li><code>slot</code></li>
-            <li><code>small</code></li>
-            <li><code>span</code></li>
-            <li><code>strong</code></li>
-            <li><code>sub</code></li>
-            <li><code>sup</code></li>
-            <li><code>svg</code></li>
-            <li><code>template</code></li>
-            <li><code>textarea</code></li>
-            <li><code>time</code></li>
-            <li><code>u</code></li>
-            <li><code>var</code></li>
-            <li><code>video</code></li>
-            <li><code>wbr</code></li>
-            </ul>
-            </div>
-         </foreignObject>
-         <text x="0" y="-39.5">Phrasing</text>
-         </g>
-         <g class="g" transform="translate(-42, -7)">
-         <ellipse rx="68" ry="22.5"/>
-         <foreignObject x="250" y="-150" width="500" height="288" transform="translate(42, 7)">
-            <div xmlns="http://www.w3.org/1999/xhtml">
-            <h1>Embedded content</h1>
-            <ul>
-            <li><code>audio</code></li>
-            <li><code>canvas</code></li>
-            <li><code>embed</code></li>
-            <li><code>iframe</code></li>
-            <li><code>img</code></li>
-            <li><code>math</code></li>
-            <li><code>object</code></li>
-            <li><code>picture</code></li>
-            <li><code>svg</code></li>
-            <li><code>video</code></li>
-            </ul>
-            </div>
-         </foreignObject>
-         <text x="0" y="7">Embedded</text>
-         </g>
+      <g class="b" transform="translate(127, -48.5)">
+      <ellipse rx="75" ry="42.5"/>
+      <foreignObject x="250" y="-150" width="500" height="288" transform="translate(-127, 48.5)">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Heading content</h1>
+      <ul>
+      <li><code>h1</code></li>
+      <li><code>h2</code></li>
+      <li><code>h3</code></li>
+      <li><code>h4</code></li>
+      <li><code>h5</code></li>
+      <li><code>h6</code></li>
+      <li><code>hgroup</code></li>
+      </ul>
+      </div>
+      </foreignObject>
+      <text x="2" y="6">Heading</text>
+      </g>
+      <g class="c" transform="translate(125, 42)">
+      <ellipse rx="75" ry="42.5"/>
+      <foreignObject x="250" y="-150" width="500" height="288" transform="translate(-125, -42)">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Sectioning content</h1>
+      <ul>
+      <li><code>article</code></li>
+      <li><code>aside</code></li>
+      <li><code>nav</code></li>
+      <li><code>section</code></li>
+      </ul>
+      </div>
+      </foreignObject>
+      <text x="1" y="5">Sectioning</text>
+      </g>
+      <g class="d" transform="translate(-113, 78)">
+      <ellipse rx="117" ry="47" transform="rotate(-15)"/>
+      <foreignObject x="250" y="-150" width="500" height="288" transform="translate(113, -78)">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Metadata content</h1>
+      <ul>
+      <li><code>base</code></li>
+      <li><code>link</code></li>
+      <li><code>meta</code></li>
+      <li><code>noscript</code></li>
+      <li><code>script</code></li>
+      <li><code>style</code></li>
+      <li><code>template</code></li>
+      <li><code>title</code></li>
+      </ul>
+      </div>
+      </foreignObject>
+      <text x="-4" y="8">Metadata</text>
+      </g>
+      <g class="e" transform="translate(-128, -34)">
+      <ellipse rx="94" ry="51"/>
+      <foreignObject x="250" y="-150" width="500" height="288" transform="translate(128, 34)">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Interactive content</h1>
+      <ul>
+      <li><code>a</code></li>
+      <li><code>audio</code></li>
+      <li><code>button</code></li>
+      <li><code>details</code></li>
+      <li><code>embed</code></li>
+      <li><code>iframe</code></li>
+      <li><code>img</code></li>
+      <li><code>input</code></li>
+      <li><code>keygen</code></li>
+      <li><code>label</code></li>
+      <li><code>object</code></li>
+      <li><code>select</code></li>
+      <li><code>textarea</code></li>
+      <li><code>video</code></li>
+      </ul>
+      </div>
+      </foreignObject>
+      <text x="-36" y="5">Interactive</text>
+      </g>
+      <g class="f" transform="translate(-40.5, -5)">
+      <ellipse rx="76.5" ry="80"/>
+      <foreignObject x="250" y="-150" width="500" height="288" transform="translate(40.5, 5)">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Phrasing content</h1>
+      <ul>
+      <li><code>a</code></li>
+      <li><code>abbr</code></li>
+      <li><code>area</code></li>
+      <li><code>audio</code></li>
+      <li><code>b</code></li>
+      <li><code>bdi</code></li>
+      <li><code>bdo</code></li>
+      <li><code>br</code></li>
+      <li><code>button</code></li>
+      <li><code>canvas</code></li>
+      <li><code>cite</code></li>
+      <li><code>code</code></li>
+      <li><code>data</code></li>
+      <li><code>date</code></li>
+      <li><code>datalist</code></li>
+      <li><code>del</code></li>
+      <li><code>dfn</code></li>
+      <li><code>em</code></li>
+      <li><code>embed</code></li>
+      <li><code>i</code></li>
+      <li><code>iframe</code></li>
+      <li><code>img</code></li>
+      <li><code>input</code></li>
+      <li><code>ins</code></li>
+      <li><code>kbd</code></li>
+      <li><code>keygen</code></li>
+      <li><code>label</code></li>
+      <li><code>link</code></li>
+      <li><code>map</code></li>
+      <li><code>mark</code></li>
+      <li><code>math</code></li>
+      <li><code>meta</code></li>
+      <li><code>meter</code></li>
+      <li><code>noscript</code></li>
+      <li><code>object</code></li>
+      <li><code>output</code></li>
+      <li><code>picture</code></li>
+      <li><code>progress</code></li>
+      <li><code>q</code></li>
+      <li><code>ruby</code></li>
+      <li><code>s</code></li>
+      <li><code>samp</code></li>
+      <li><code>script</code></li>
+      <li><code>select</code></li>
+      <li><code>slot</code></li>
+      <li><code>small</code></li>
+      <li><code>span</code></li>
+      <li><code>strong</code></li>
+      <li><code>sub</code></li>
+      <li><code>sup</code></li>
+      <li><code>svg</code></li>
+      <li><code>template</code></li>
+      <li><code>textarea</code></li>
+      <li><code>time</code></li>
+      <li><code>u</code></li>
+      <li><code>var</code></li>
+      <li><code>video</code></li>
+      <li><code>wbr</code></li>
+      </ul>
+      </div>
+      </foreignObject>
+      <text x="0" y="-39.5">Phrasing</text>
+      </g>
+      <g class="g" transform="translate(-42, -7)">
+      <ellipse rx="68" ry="22.5"/>
+      <foreignObject x="250" y="-150" width="500" height="288" transform="translate(42, 7)">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>Embedded content</h2>
+      <ul>
+      <li><code>audio</code></li>
+      <li><code>canvas</code></li>
+      <li><code>embed</code></li>
+      <li><code>iframe</code></li>
+      <li><code>img</code></li>
+      <li><code>math</code></li>
+      <li><code>object</code></li>
+      <li><code>picture</code></li>
+      <li><code>svg</code></li>
+      <li><code>video</code></li>
+      </ul>
+      </div>
+      </foreignObject>
+      <text x="0" y="7">Embedded</text>
+      </g>
       </svg>
    </div>
+
+   - Heading Element (`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<hgroup>`)
+   - Sectioning Element (`article`, `aside`, `nav`, `section`)
+   - Phrasing Content (`<a>`, `<abbr>`, `<area>`, `<audio>`, `<bdi>`, `<bdo>`, `<br>`, `<button>`, `<canvas>`, `<cite>`, `<code>`, `<data>`, `<date>`, `<datalist>`, `<del>`, `<dfn>`, `<em>`, `<embed>`, `<iframe>`, `<img>`, `<input>`, `<ins>`, `<kbd>`, `<keygen>`, `<label>`, `<link>`, `<map>`, `<mark>`, `<math>`, `<meta>`, `<meter>`, `<noscript>`, `<object>`, `<output>`, `<picture>`, `<progress>`, `<q>`, `<ruby>`, `<samp>`, `<script>`, `<select>`, `<slot>`, `<small>`, `<span>`, `<strong>`, `<sub>`, `<sup>`, `<svg>`, `<template>`, `<textarea>`, `<time>`, `<var>`, `<video>`, `<wbr>`)
+   - Embedded Content (`<audio>`, `<canvas>`, `<embed>`, `<iframe>`, `<img>`, `<math>`, `<object>`, `<picture>`, `<svg>`, `<video>`)
+   - Interactive Content (`<a>`, `<audio>`, `<button>`, `<details>`, `<embed>`, `<iframe>`, `<img>`, `<input>`, `<keygen>`, `<label>`, `<object>`, `<select>`, `<textarea>`, `<video>`)
+   - Metadata Content (`<base>`, `<link>`, `<meta>`, `<noscript>`, `<script>`, `<style>`, `<template>`, `<title>`)
 
 <br>
 
