@@ -10,8 +10,8 @@ draft: false
 # weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
 cover:
-    image: "" # image path/url
-    alt: "" # alt text
+    image: "/img/Google_Image_Search_of_FrontendCentral.webp" # image path/url
+    alt: "Image SEO Boosts Website Rankings" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
