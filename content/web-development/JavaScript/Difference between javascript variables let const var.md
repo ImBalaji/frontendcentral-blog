@@ -116,11 +116,10 @@ Here, the code shows how `var` is function-scoped and accessible outside the if 
 ```
 Here, `var` is hoisted, meaning the declaration is moved to the top of the function scope, but its initialization remains in place. With `let`, hoisting does not apply in the same manner, leading to a ReferenceError if accessed before initialization.
 
-<div class="note">
-  <strong> Note: </strong>
+<aside class="note">
   <ol>
     <li>Always prefer to use <code>let</code> and <code>const</code> over <code>var</code> for variable declarations in JavaScript.</li>
     <li>Use <code>const</code> when you know the value of the variable will remain constant thorughout the program. If the value might change, then use <code>let</code>.</li>
     <li><code>const</code> clearly indicate that the variable should not change, which makes your code easy to read and maintain.</li>
   </ol>
-</div>
+</aside>

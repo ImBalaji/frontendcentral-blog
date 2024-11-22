@@ -82,9 +82,14 @@
   max-width: calc(var(--main-width) + var(--gap) * 2);
 }
 
+.post-content img {
+  width: 450px;
+  height: 240px;
+}
+
 .post-content p{
   font-size: 1.21rem;
-  hyphens: auto;
+  /* hyphens: auto; */
   word-break: break-word;
 }
 
@@ -378,6 +383,10 @@
   font-weight: normal;
 }
 
+code[class*=language-], pre[class*=language-] {
+  font-size: 0.8em !important;
+}
+
 .toc {
   margin: 0 2px 40px 2px;
   border: 1px solid var(--border);
@@ -542,22 +551,33 @@ img.in-text {
   margin: auto;
 }
 
+aside.note{
+  display: flex !important;
+}
+
 .note {
-  padding: 22px; 
+  padding: 18px; 
   hyphens: auto;
   word-break: break-word;
   background-color: #e0f7fa;
   color: #006064;
-  margin-top: 30px;
+  margin-block: 25px;
   border: 2px solid #b2ebf2;
-  font-family:  Source Serif pro, Georgia, Cambria, serif !important;
-  /* font-family: 'Lato', 'Trebuchet MS', sans-serif; */
-  font-size: 1.2rem;
+  /* font-family:  Source Serif pro, Georgia, Cambria, serif !important; */
+  font-family: 'Lato', 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
   font-weight: 400;
   word-spacing: 1.1px;
-  border-radius: 5px; /* More pronounced rounded corners */
+  border-radius: 3px;
   /* text-align: justify; Justify the text */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.note::before {
+  display:block;
+  font: normal normal normal 24px/24px Material Icons;
+  content: "lightbulb_outline";
+  margin-right: 15px;
 }
 
 .tip {

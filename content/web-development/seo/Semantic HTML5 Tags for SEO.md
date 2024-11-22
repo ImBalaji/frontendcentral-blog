@@ -23,16 +23,15 @@ Every year, almost 2.7 billion blog entries are written online, but almost <a hr
 Unlike generic tags like `<div>` or `<span>`, semantic HTML5 elements such as `<header>`, `<article>`, and `<footer>` will help Search Engines better understand the content of a web page, which in turn improves indexing and visibility, making it easier for Search Engines to determine the hierarchy and importance of different sections.
 
    <figure>
-      <img src="/img/Semantic_html_vs_nonSemantic_html.webp" alt="Comparison of Semantic and Non-Semantic HTML Elements" width="auto" height="auto"/>
+      <img src="/img/Semantic_html_vs_nonSemantic_html.webp" alt="Comparison of Semantic and Non-Semantic HTML Elements" />
       <figcaption>HTML5 Semantic help Search Engines with Better SEO.</figcaption>
    </figure> 
 
 In this article, I will discuss on how <a style="box-shadow:none" href="#essential-html5-semantic-tags-to-use-in-websites" title="Usage of HTML5 semantic elements is an important factor for technical SEO">semantic HTML5 tags</a> enhance technical SEO and provide a list of essential tags you should always use when building or updating your site.
 
-<div class="note">
-<strong>Note:</strong><br>
+<aside class="note">
 Whether you are working with a white label SEO firm or simply looking to design your own website with a focus on SEO, Understanding Semantic HTML will be invaluable to your websites SEO.
-</div>
+</aside>
 
 ## How Semantic HTML5 Tags Help SEO?
 
@@ -48,7 +47,7 @@ Visually impaired users use <a href="https://www.afb.org/blindness-and-low-visio
    <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener noreferrer">Google Lighthouse</a> compares websites content against the Web Content Accessibility Guidelines and generates a score between 0 and 100.  
 
    <figure>
-      <img src="/img/google_lighthouse_accessibility.webp" alt="Google Lighthouse Accessibility Score of Website" width="auto" height="auto"/>
+      <img src="/img/google_lighthouse_accessibility.webp" alt="Google Lighthouse Accessibility Score of Website" />
       <figcaption>Lighthouse Accessibility Score for Frontend-Central Website</figcaption>
    </figure> 
 
