@@ -7581,10 +7581,6 @@ progress {
   .post-title {
     font-size: 2.5rem;
   }
-  .post-content img {
-    width: 768px;
-    height: 400px;
-  }
 }
 @media (min-width: 992px) {
   .main {
@@ -7609,10 +7605,6 @@ progress {
   .note {
     hyphens: none;
     word-break: normal;
-  }
-  .post-content img {
-    width: 900px;
-    height: 425px;
   }
 }
 @media (min-width: 1200px) {
