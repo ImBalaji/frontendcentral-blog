@@ -92,6 +92,12 @@
   max-width: calc(var(--main-width) + var(--gap) * 2);
 }
 
+.post-content img {
+  border-style: solid;
+  border-color: #cdd6df;
+  border-width: thick;
+}
+
 .post-content p{
   font-size: 1.21rem;
   /* hyphens: auto; */
