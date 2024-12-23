@@ -19,7 +19,7 @@ cover:
 
 <div style="margin-top: -24px;">  
 
-### What is Image SEO?
+### What is SEO for Images?
 Image search optimization is the practice of optimizing images on your website so that Search Engines like Yahoo, Google, Bing can better understand, index, and display them in Search Engine Results Page (SERPs). Optimizing images involves refining aspects such as image file size, file format, alt text, file names, captions, lazy loading, using responsive images and many other strategies.
 
 By improving these elements, images become more accessible and search-friendly, potentially boosting traffic to your website through image search results.

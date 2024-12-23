@@ -1,3 +1,4 @@
+<!-- https://www.svgviewer.dev/ -->
 {{- $icon_name := ( trim .name " " | lower )}}
 {{- if (eq $icon_name "123rf") -}}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -287,6 +288,13 @@
         <circle cx="30.329" cy="95.367" r="16.571" />
     </g>
 </svg>
+{{- else if (eq $icon_name "fiverr") -}}
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <path d="M0 0h192v192H0z" style="fill:none"/>
+    <path d="M121.1 170h34.75V67.04H90.21v-7.72s0-9.01 9.01-9.01h21.88V22H99.22s-43.76 0-43.76 37.32v7.72h-19.3v28.31h19.3v74.64h34.75V95.36h30.89V170Z" 
+    style="stroke:currentColor;stroke-linejoin:round;stroke-width:14px;fill:none"/>
+</svg>
+
 {{- else if (eq $icon_name "firefish") -}}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
     <path

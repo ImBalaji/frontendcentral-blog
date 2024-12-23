@@ -85,12 +85,16 @@ params:
      Contact me to start building your website."
 
   socialIcons:
+    - name: facebook
+      url: "https://www.facebook.com/profile.php?id=61565514758588"
+    - name: x
+      url: "https://x.com/BalajiSM17"  
+    - name: linkedin
+      url: "https://www.linkedin.com/in/balaji-sm/"  
     - name: github
       url: "https://github.com/ImBalaji"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/balaji-sm/"
-    - name: x
-      url: "https://x.com/BalajiSM17"
+    - name: fiverr
+      url: "https://www.fiverr.com/balajism223"
     - name: email
       url: "mailto:balaji2690@gmail.com"
 
