@@ -34,7 +34,6 @@ _Understanding and effectively utilizing **form attributes** can greatly improve
   ```html{linenos=table}
     <input type="text" autocomplete="on">
     <input type="text" autocomplete="off">
-
   ```
   ### `autocomplete` attribute values:
   `on`: The browser fetches stored data and may automatically complete entries.  
@@ -42,7 +41,9 @@ _Understanding and effectively utilizing **form attributes** can greatly improve
   `off`: The browser may not automatically complete entries.   
 
   `Field-specific values`: Specify the type of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#token-list" target="_blank" rel="noopener noreferrer" title="MDN document on autofill detail tokens">data expected</a> (e.g., name, email, address-line1, postal-code).
+  
   ### Example:
+
   ```html{linenos=table}
   <form action="/submit" method="post" autocomplete="on">
 
@@ -68,7 +69,6 @@ _Understanding and effectively utilizing **form attributes** can greatly improve
     <input type="tel" id="phone" name="phone" autocomplete="tel"><br>
     
     <input type="submit" value="Submit">
-
   </form>
   ``` 
 

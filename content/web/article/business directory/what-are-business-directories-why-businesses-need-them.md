@@ -24,7 +24,6 @@ A business directory is a compilation of information about various businesses, m
 
 Think of a business directory as a phone book having collection of information about various companies, their name, address, phone number and what they do. Whether you are looking for a nearby restaurant, a mechanic, or a software company, a business directory helps you find and contact them quickly. It is like having a helpful guide to all the businesses in your area or even beyond at your fingertips.
 
-
 ## Why Do Businesses Need Listings?
 In today’s digital landscape, being listed in business directories provides a range of advantages that can significantly impact a business’s success.
 

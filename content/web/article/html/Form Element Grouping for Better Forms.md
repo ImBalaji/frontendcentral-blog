@@ -6,7 +6,7 @@ description:
 keywords: [""]
 tags: 
 
-draft: false
+draft: true
 # images: 
 # weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]
