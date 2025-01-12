@@ -102,7 +102,7 @@
 .post-content h1,
 .post-content h2,
 .post-content h3,
-.post-content h4,
+.post-content h4, 
 .post-content h5,
 .post-content h6 {
   margin: 24px 0 10px;  
@@ -116,14 +116,20 @@
   text-transform: capitalize;
 }
 
+.post-content h2 {
+  font-size: 2.5rem; /* 44px / 16px */
+  text-transform: capitalize;
+  margin-top: 1.65rem;
+}
+
 .post-content h3 {
   font-size: 2.1rem; /* Already in rem */
-  margin: 2.4375rem auto 0.875rem; /* 39px auto 14px */
+  margin: 1.4375rem auto 0.875rem; /* 39px auto 14px */
 }
 
 .post-content h4 {
   font-size: 1.58rem; /* Already in rem */
-  margin-top: 2.5rem; /* 40px */
+  margin-top: 1.25rem; /* 40px */
 }
 
 .post-content h5 {
