@@ -38,7 +38,7 @@
         </div>           
         </aside>    
         <main class="main"> {{- block "main" . }}{{ end }} </main> 
-        <aside class="sidebar">Sidebar 2</aside> 
+        <aside class="sidebar"></aside> 
     </div>
     {{- end }}
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
