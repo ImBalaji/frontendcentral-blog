@@ -6,13 +6,32 @@
     <header class="">
         <h1 class="fw-bold">{{ .Title | markdownify }}</h1>
     </header>
-    <div class="entry-content fs-5">
-    <!-- <div class="entry-content fs-6"> -->
+    <div class="fs-5">
+        <figure style="float: left;">
+            <div id="profile-picture" class="hide-on-desktop">
+                <img src="\img\Balaji_orange_bg.webp" alt="picture of Balaji, author of frontend central dot com" width="130" height="130" style="border-radius: 100px;">
+                <span style="padding: 9px"></span>
+                <footer class="entry-footer">
+                    {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+                </footer>
+            </div>
+        </figure>
+        <div class="entry-content">
         {{ .Content | markdownify }}
+        </div>
     </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-    </footer>
+
+    <!-- <div class="entry-content fs-5">
+        <figure>
+            <img src="\img\Balaji_orange_bg.webp" alt="picture of Balaji, author of frontend central dot com" width="130" height="130">
+            <span style="padding: 9px"></span>
+            <footer class="entry-footer">
+                {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+            </footer>
+        </figure>
+        {{ .Content | markdownify }}
+    </div> -->
+  
 </article>
 {{- end -}}
 <hr>

@@ -24,11 +24,22 @@
         {{- block "main" . }}{{ end }}
     </main>   
 
-    {{- else }}    
-
-    <main class="main">
-        {{- block "main" . }}{{ end }}
-    </main>    
+    {{- else }}   
+    <div class="container first-entry home-info" style="--bs-gutter-x: 0 !important;">         
+        <aside class="sidebar">    
+            <div class="hide-on-mobile">     
+            <figure class="">
+                <img src="\img\Balaji_orange_bg.webp" alt="picture of Balaji, author of frontend central dot com" width="130" height="130">
+                <span style="padding: 9px"></span>
+                <footer class="entry-footer">
+                    {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+                </footer>
+            </figure>  
+        </div>           
+        </aside>    
+        <main class="main"> {{- block "main" . }}{{ end }} </main> 
+        <aside class="sidebar">Sidebar 2</aside> 
+    </div>
     {{- end }}
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 </body>

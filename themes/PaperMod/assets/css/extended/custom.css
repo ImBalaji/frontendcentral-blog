@@ -376,7 +376,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  /* overflow: auto; */
+  overflow: auto;
   font-size: 0.875em;
 }
 pre code {
@@ -7572,6 +7572,9 @@ progress {
   }
 }
 @media (min-width: 768px) {
+  #profile-picture {
+    margin: 5px 10px 0 0 !important;
+  }
   nav {
     padding-block: 2rem !important;
   }
@@ -7583,11 +7586,35 @@ progress {
   }
 }
 @media (min-width: 992px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+  .hide-on-mobile {
+    display: block !important;
+  }
   .main {
     position: relative;
   }
+  aside.sidebar {
+    margin: 0 !important;
+  }
+  aside.sidebar img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: calc(var(--gap) * 5) 0 0 0;
+    border-radius: 100px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* Adjust column widths as needed */
+    gap: 10px; /* Adjust the gap between columns if needed */
+  }
   .navbar-brand img {
     height: 35px;
+  }
+  .first-entry .entry-content {
+    margin: 14px 0 !important;
   }
   .entry-content {
     font-size: 19px !important;
@@ -7615,9 +7642,46 @@ progress {
     margin-bottom: 3rem;
     padding-inline: 8.1rem !important;
   }
+  .social-icons a svg {
+    height: 26px;
+    width: 26px;
+  }
+  aside.sidebar img {
+    margin: calc(var(--gap) * 3) 0 0 0;
+    width: 230px;
+    height: 230px;
+  }
 }
 :root {
   --bs-link-color-rgb: var(--primary) !important;
+}
+
+#profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 10px 0 0;
+}
+
+.hide-on-desktop {
+  display: block;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+aside.sidebar {
+  margin: auto;
+}
+aside.sidebar img {
+  border-radius: 120px;
+}
+aside.sidebar figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hr-bg {
