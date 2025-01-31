@@ -43,6 +43,8 @@ body {
   font-weight: 300;
   overscroll-behavior: none;
   height: 100vh;
+  overflow-x: scroll; /* Hide horizontal scroll */
+  overflow-y: scroll; /* Add vertical scroll */
 }
 h1,
 h2 {
@@ -70,8 +72,8 @@ h2 {
 
 .container {
   overscroll-behavior: none;
-  width: 500%;
-  height: 100%;
+  width: 60vw;
+  height: 10vh; 
   display: flex;
   flex-wrap: nowrap;
 }
@@ -93,12 +95,10 @@ h1 code {
 }
      </style>
     <main>
-        <header class="main-bg-container">
+        <!-- <header class="main-bg-container">
             <div class="main-bg-img">
                 {{- partial "profile/navbar.html" . }} 
-                <!-- <h1 class="text-primary" >Hero</h1>         -->
-            </div>     
-   
+            </div>      -->
             <div class="container">
                 <div class="description panel bg-dark-subtle">
                 <div><h1>Horizontal snapping sections (simple)</h1>
@@ -122,7 +122,7 @@ h1 code {
                 FIVE
                 </section>                  
             </div>    
-        </header>        
+        <!-- </header>         -->
         <div>
             description
         </div>
