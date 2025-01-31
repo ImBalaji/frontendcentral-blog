@@ -20,9 +20,9 @@
             {{- end }}
             <!-- <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
                 height="{{- site.Params.label.iconHeight | default "30" -}}"> -->
-            <img src="{{ $img.Permalink }}" alt="Logo of FrontendCentral" aria-label="logo" />
+            <img id="logo" src="{{ $img.Permalink }}" alt="Logo of FrontendCentral" aria-label="logo" />
         {{- else }}
-        <img src="{{- site.Params.label.dark_themed_icon | absURL -}}" alt="Logo of FrontendCentral" aria-label="logo"
+        <img id="logo" src="{{- site.Params.label.dark_themed_icon | absURL -}}" alt="Logo of FrontendCentral" aria-label="logo"
             height="{{- site.Params.label.iconHeight | default "30" -}}">
 
         

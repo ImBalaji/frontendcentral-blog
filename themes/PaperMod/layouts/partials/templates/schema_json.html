@@ -55,8 +55,89 @@
   ]
 }
 </script>
+
 {{- if .IsPage }}
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BlogPosting",
+  "@id": "{{ .Permalink }}/#BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "headline": "{{ .Title | plainify }}",
+  "name": "{{ .Title | plainify }}",
+  "description": "{{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "datePublished": "{{ .PublishDate }}",
+  "dateModified": "{{ .Lastmod }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.Author.name }}",
+    "url": "{{ site.Params.about_url | absURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Frontend Central",
+    "logo": {
+      "@type": "ImageObject",
+      "@id": "{{ site.Home.Permalink }}/img/android-chrome-512x512.png",
+      "url": "{{ site.Home.Permalink }}/img/android-chrome-512x512.png",
+      "width": "600",
+      "height": "60"
+    }
+  },
+  {{- if .Params.cover.image }}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ .Params.cover.image | absURL }}",
+    "height": "362",
+    "width": "388"
+  },
+  {{- else }}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.Home.Permalink }}/img/default-image.png",
+    "height": "362",
+    "width": "388"
+  },
+  {{- end }}
+  "url": "{{ .Permalink }}",
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": "{{ site.Home.Permalink }}/web/",
+    "name": "Frontend Central Blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Frontend Central"
+    }
+  },
+
+  "about": { 
+    "@type": "Thing", 
+    "@id": "{{ .Params.metaAbout.sameAs }}", 
+    "name": "{{ .Params.metaAbout.name }}", 
+    "sameAs": "{{ .Params.metaAbout.sameAs }}" 
+  },
+
+  "mentions": {
+    "@type": "Thing",
+    "@id": "{{ .Params.metaMentions.sameAs }}",
+    "name": "{{ .Params.metaMentions.name }}",
+    "sameAs": "{{ .Params.metaMentions.sameAs }}"
+  },
+
+  "wordCount": "488",
+  "keywords": ["Bibframe2Schema.org", "Libraries", "Library of Congress"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "2.5",
+    "ratingCount": "2"
+  }
+}
+</script>  
+
+<!-- <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -119,70 +200,8 @@
     },
     "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }}
   }
-  </script>
-<!-- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title | plainify}},
-  "name": "{{ .Title | plainify }}",
-  "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify  }}{{ end -}},
-  "keywords": [
-    {{- if .Params.keywords }}
-    {{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
-    {{- else }}
-    {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
-    {{- end }}
-  ],
-  "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }},
-  "wordCount" : "{{ .WordCount }}",
-  "inLanguage": {{ .Language.Lang | default "en-us" }},
-  {{ if .Params.cover.image -}}
-  "image":
-    {{- if (ne .Params.cover.relative true) -}}
-    {{ .Params.cover.image | absURL }},
-    {{- else -}}
-    {{ (path.Join .RelPermalink .Params.cover.image ) | absURL }},
-    {{- end}}
-  {{- else }}
-    {{- $images := partial "partials/templates/_funcs/get-page-images" . -}}
-    {{- with index $images 0 -}}
-  "image": {{ .Permalink }},
-    {{- end }}
-  {{- end -}}
-  "datePublished": {{ .PublishDate }},
-  "dateModified": {{ .Lastmod }},
-  {{- with (.Params.author | default site.Params.author) }}
-  "author":
-    {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
-  [{{- range $i, $v := . -}}
-  {{- if $i }}, {{end -}}
-  {
-    "@type": "Person",
-    "name": {{ $v }}
-  }
-  {{- end }}],
-    {{- else -}}
-  {
-    "@type": "Person",
-    "name": {{ . }}
-  },
-    {{- end -}}
-  {{- end }}
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": {{ .Permalink | safeHTML }}
-  },
-  "publisher": {
-    "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-    "name": {{ site.Title }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }}
-    }
-  }
-}
-</script> -->
+  </script> -->
+
 {{- end }}{{/* .IsPage end */}}
 
 {{- end -}}

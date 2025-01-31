@@ -65,12 +65,18 @@
 {{- /* order is important */}}
 {{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod $includes_all $media) | resources.Concat
 "assets/css/core.css" | resources.Minify }}
-{{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify
-}}
+<!-- {{- $extended := "" -}} -->
+{{- $extended = resources.Match "css/extended/*.css" | resources.Concat "assets/css/extended.css" | resources.Minify -}}
 
 {{- /* bundle all required css */}}
 {{- /* Add extended css after theme style */ -}}
-{{- $stylesheet := (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css" }}
+
+{{- $stylesheet := "" -}} <!-- Declare the variable outside -->
+{{- if (eq .Layout `profile`) -}} 
+  {{- $stylesheet = resources.Match "css/extended/profile/custom.css" | resources.Concat "abssets/css/stylesheet.css" -}}
+{{- else -}}
+  {{- $stylesheet = (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css" -}}
+{{- end -}}
 
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $stylesheet := $stylesheet | fingerprint }}

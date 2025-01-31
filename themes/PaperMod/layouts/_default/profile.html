@@ -1,0 +1,139 @@
+<!-- {{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header> -->
+<!-- {{- end }}{{/* end main */}} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Central Designs</title>
+</head>
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body>    
+<style>
+body {
+  /* background-color: #222; */
+  /* color: #ddd; */
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+  overscroll-behavior: none;
+  height: 100vh;
+}
+h1,
+h2 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.panel pre.prettyprint {
+  font-size: 20px;
+  text-align: left;
+  width: auto;
+  font-weight: normal;
+  margin: 10px;
+  border: none;
+}
+
+.description,
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 80vh;
+}
+
+.container {
+  overscroll-behavior: none;
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel {
+  font-weight: 300;
+  min-width: 80vw;
+}
+
+code {
+  padding: 0.1rem;
+  background: #fff;
+  color: #222;
+  font-size: 1.5rem;
+}
+
+h1 code {
+  font-size: 1.7rem;
+}
+     </style>
+    <main>
+        <header class="main-bg-container">
+            <div class="main-bg-img">
+                {{- partial "profile/navbar.html" . }} 
+                <!-- <h1 class="text-primary" >Hero</h1>         -->
+            </div>     
+   
+            <div class="container">
+                <div class="description panel bg-dark-subtle">
+                <div><h1>Horizontal snapping sections (simple)</h1>
+                    <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
+                    <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+                </div>
+                </div>                              
+                <section class="panel bg-danger">
+                ONE
+                </section>
+                <section class="panel bg-dark">
+                TWO
+                </section>
+                <section class="panel bg-gradient">
+                THREE
+                </section>
+                <section class="panel bg-info">
+                FOUR
+                </section>
+                <section class="panel bg-primary">
+                FIVE
+                </section>                  
+            </div>    
+        </header>        
+        <div>
+            description
+        </div>
+        <div>
+            services we provide
+        </div>
+        <div>Case study</div>
+        <div>testimonial</div>
+        <div>meet the team</div>
+        <div>lets talk</div>
+    </main>
+    {{ partialCached "profile/footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}    
+</body>
+</html>
