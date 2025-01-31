@@ -43,8 +43,6 @@ body {
   font-weight: 300;
   overscroll-behavior: none;
   height: 100vh;
-  overflow-x: scroll; /* Hide horizontal scroll */
-  overflow-y: scroll; /* Add vertical scroll */
 }
 h1,
 h2 {
@@ -72,8 +70,8 @@ h2 {
 
 .container {
   overscroll-behavior: none;
-  width: 80vw;
-  height: 100vh; 
+  width: 100vw;
+  height: 96vh; 
   display: flex;
   flex-wrap: nowrap;
 }
@@ -93,35 +91,39 @@ code {
 h1 code {
   font-size: 1.7rem;
 }
-     </style>
+</style>
+
     <main>
+        {{- partial "profile/navbar.html" . }} 
         <!-- <header class="main-bg-container">
             <div class="main-bg-img">
                 {{- partial "profile/navbar.html" . }} 
             </div>      -->
-            <div class="container">
-                <div class="description panel bg-dark-subtle">
-                <div><h1>Horizontal snapping sections (simple)</h1>
-                    <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                    <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+        
+            <!-- <header> -->
+                <div class="container">
+                    <div class="description panel bg-dark-subtle">
+                    <div>
+                        <p>ZERO</p>
+                    </div>
+                    </div>                              
+                    <section class="panel bg-danger">
+                    ONE 
+                    </section>
+                    <section class="panel bg-dark">
+                    TWO
+                    </section>
+                    <section class="panel bg-gradient">
+                    THREE
+                    </section>
+                    <section class="panel bg-info">
+                    FOUR
+                    </section>
+                    <section class="panel bg-primary">
+                    FIVE
+                    </section>                  
                 </div>
-                </div>                              
-                <section class="panel bg-danger">
-                ONE
-                </section>
-                <section class="panel bg-dark">
-                TWO
-                </section>
-                <section class="panel bg-gradient">
-                THREE
-                </section>
-                <section class="panel bg-info">
-                FOUR
-                </section>
-                <section class="panel bg-primary">
-                FIVE
-                </section>                  
-            </div>    
+            <!-- </header> -->
         <!-- </header>         -->
         <div>
             description
