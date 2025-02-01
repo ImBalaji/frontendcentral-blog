@@ -61,10 +61,10 @@
 {
   "@context": "https://schema.org/",
   "@type": "BlogPosting",
-  "@id": "{{ .Permalink }}/#BlogPosting",
+  "@id": "{{ .Permalink | safeHTML }}/#BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
+    "@id": "{{ .Permalink | safeHTML }}"
   },
   "headline": "{{ .Title | plainify }}",
   "name": "{{ .Title | plainify }}",
@@ -102,7 +102,7 @@
     "width": "388"
   },
   {{- end }}
-  "url": "{{ .Permalink }}",
+  "url": "{{ .Permalink | safeHTML }}",
   "isPartOf": {
     "@type": "Blog",
     "@id": "{{ site.Home.Permalink }}/web/",
@@ -127,17 +127,19 @@
     "sameAs": "{{ .Params.metaMentions.sameAs }}"
   },
 
-  "wordCount": "488",
-  "keywords": ["Bibframe2Schema.org", "Libraries", "Library of Congress"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "2.5",
-    "ratingCount": "2"
-  }
+  "keywords": [
+      {{- if .Params.keywords }}
+      {{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+      {{- else }}
+      {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+      {{- end }}
+    ],    
+  "wordCount" : "{{ .WordCount }}",
+  "inLanguage": {{ .Language.Lang | default "en-us" }},  
 }
 </script>  
 
-<!-- <script type="application/ld+json">
+<!-- <script type="application/ld+json"> 
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -167,7 +169,7 @@
       {{- end }}
     {{- end -}}
     "datePublished": {{ .PublishDate }},
-    "dateModified": {{ .Lastmod }},
+    "dateModified": {{ .Lastmod }},publisher
     {{- with (.Params.author | default site.Params.author) }}
     "author": 
       {{- if (or (eq (printf "%T" .) "[]string") (eq (printf "%T" .) "[]interface {}")) -}}
