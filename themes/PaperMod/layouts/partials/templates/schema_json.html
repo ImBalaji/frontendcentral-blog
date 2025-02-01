@@ -113,19 +113,23 @@
     }
   },
 
+  {{- if .Params.metaAbout }}
   "about": { 
     "@type": "Thing", 
     "@id": "{{ .Params.metaAbout.sameAs }}", 
     "name": "{{ .Params.metaAbout.name }}", 
     "sameAs": "{{ .Params.metaAbout.sameAs }}" 
   },
+  {{- end }}
 
+  {{- if .Params.metaMentions }}
   "mentions": {
     "@type": "Thing",
     "@id": "{{ .Params.metaMentions.sameAs }}",
     "name": "{{ .Params.metaMentions.name }}",
     "sameAs": "{{ .Params.metaMentions.sameAs }}"
   },
+  {{- end }}
 
   "keywords": [
       {{- if .Params.keywords }}
