@@ -116,7 +116,7 @@
   {{- if .Params.metaAbout }}
   "about": { 
     "@type": "Thing", 
-    "@id": "{{ .Params.metaAbout.sameAs }}", 
+    "@id": "{{ .Params.metaAbout.id }}", 
     "name": "{{ .Params.metaAbout.name }}", 
     "sameAs": "{{ .Params.metaAbout.sameAs }}" 
   },
@@ -125,7 +125,7 @@
   {{- if .Params.metaMentions }}
   "mentions": {
     "@type": "Thing",
-    "@id": "{{ .Params.metaMentions.sameAs }}",
+    "@id": "{{ .Params.metaMentions.id }}",
     "name": "{{ .Params.metaMentions.name }}",
     "sameAs": "{{ .Params.metaMentions.sameAs }}"
   },
