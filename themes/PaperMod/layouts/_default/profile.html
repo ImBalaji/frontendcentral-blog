@@ -41,9 +41,9 @@ body {
   font-size: 18px;
   line-height: 1.4;
   font-weight: 300;
-  overscroll-behavior: none;
-  height: 100vh;
-  overflow-x: hidden;
+  /* overscroll-behavior: none; */
+  /* height: 100vh; */
+  /* overflow-x: hidden; */
 }
 h1,
 h2 {
@@ -70,9 +70,9 @@ h2 {
 }
 
 .container {
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
   width: 100vw;
-  height: 96vh; 
+  height: 100vh; 
   display: flex;
   flex-wrap: nowrap;
 }
@@ -92,6 +92,16 @@ code {
 h1 code {
   font-size: 1.7rem;
 }
+
+.video-container {
+    width: 100%;
+    height: auto;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
 </style>
 
     <main class="position-relative">
@@ -101,7 +111,7 @@ h1 code {
                 {{- partial "profile/navbar.html" . }} 
             </div>      -->
         
-            <header>
+            <!-- <header> -->
                 <div class="container">
                     <div class="description panel bg-dark-subtle">
                     <div>
@@ -124,22 +134,27 @@ h1 code {
                     FIVE
                     </section>                  
                 </div>
-            </header>
+            <!-- </header> -->
             
-          <br>
-          <section aria-labelledby="about-us-heading">
-              <h2 id="about-us-heading" class="text-black">About Us</h2>
-              <p>Get to know us and what drives our passion for web design and development. Watch our story unfold in the video below.</p>
-              
-              <div role="region" aria-labelledby="video-heading">
-                  <h3 id="video-heading">Our Story</h3>
-                  <video controls aria-describedby="video-description" tabindex="0">
-                      <source src="https://static.videezy.com/system/resources/previews/000/013/487/original/Water_66_-_4K_res.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-                  <p id="video-description">This video provides an insight into our journey, values, and what sets us apart in the world of web design. Meet our team and see our work in action!</p>
-              </div>
-          </section>
+          <!-- <br> -->
+          <!-- <div>
+            services we provide
+        </div> -->
+        <section aria-labelledby="about-us-heading">
+            <h2 id="about-us-heading">About Us</h2>
+            <p>Get to know us and what drives our passion for web design and development. Watch our story unfold in the video below.</p>
+            
+            <div role="region" aria-labelledby="video-heading">
+                <h3 id="video-heading">Our Story</h3>
+                <div class="video-container">
+                    <video controls aria-describedby="video-description" tabindex="0" loading="lazy" data-src="https://static.videezy.com/system/resources/previews/000/013/487/original/Water_66_-_4K_res.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p id="video-description" role="document">This video provides an insight into our journey, values, and what sets us apart in the world of web design. Meet our team and see our work in action!</p>
+                </div>
+            </div>
+        </section>
+      
           
         <div>
             services we provide

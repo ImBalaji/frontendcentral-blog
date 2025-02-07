@@ -28,6 +28,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// video appear only when it comes into the viewport
+document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll('video[data-src]');
+    
+    const lazyLoadVideo = (video) => {
+        const src = video.getAttribute('data-src');
+        if (src) {
+            video.src = src;
+            video.removeAttribute('data-src');
+        }
+    };
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                lazyLoadVideo(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    });
+    
+    videos.forEach(video => {
+        observer.observe(video);
+    });
+});
+// END --video appear only when it comes into the viewport
+
 </script>
 
 <script>
