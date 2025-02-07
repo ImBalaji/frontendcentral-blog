@@ -1,8 +1,8 @@
 ---
 title: "Profile" # in any language you want
 layout: "profile" # necessary for search
-url: "/profile"
+url: "/profile/"
 description: "Description for Search"
-summary: "search"
+# summary: "search"
 placeholder: "placeholder text in search input box"
 ---
