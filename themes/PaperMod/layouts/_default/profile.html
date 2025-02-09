@@ -102,64 +102,241 @@ video {
     height: auto;
 }
 
+/* #services {
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+#services-heading {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.service-item {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.service-item h3 a {
+    text-decoration: none;
+    color: #0073e6;
+}
+.service-item p {
+    margin-top: 0.5em;
+} */
+
+#services {
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+#services-heading {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.service-item {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.service-item h3 a {
+    text-decoration: none;
+    color: #0073e6;
+}
+.service-item p {
+    margin-top: 0.5em;
+}
+.related-projects, .technologies-used, .future-services {
+    margin-top: 1em;
+}
+.related-projects h4, .technologies-used h4, .future-services h4 {
+    margin-bottom: 0.5em;
+}
+.related-projects ul, .technologies-used ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.related-projects ul li, .technologies-used ul li {
+    margin: 0.5em 0;
+}
+
+#featured-projects {
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+#featured-projects-heading {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.project-item {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.project-item h3 a {
+    text-decoration: none;
+    color: #0073e6;
+}
+.project-item p {
+    margin-top: 0.5em;
+}
+
+
 </style>
 
-    <main class="position-relative">
-        {{- partial "profile/navbar.html" . }} 
-        <!-- <header class="main-bg-container">
-            <div class="main-bg-img">
-                {{- partial "profile/navbar.html" . }} 
-            </div>      -->
-        
-            <!-- <header> -->
-                <div class="container">
-                    <div class="description panel bg-dark-subtle">
-                    <div>
-                        <p>ZERO</p>
-                    </div>
-                    </div>                              
-                    <section class="panel bg-danger">
-                    ONE 
-                    </section>
-                    <section class="panel bg-dark">
-                    TWO
-                    </section>
-                    <section class="panel bg-gradient">
-                    THREE
-                    </section>
-                    <section class="panel bg-info">
-                    FOUR
-                    </section>
-                    <section class="panel bg-primary">
-                    FIVE
-                    </section>                  
-                </div>
-            <!-- </header> -->
-            
-          <!-- <br> -->
-          <!-- <div>
-            services we provide
-        </div> -->
-        <section aria-labelledby="about-us-heading">
-            <h2 id="about-us-heading">About Us</h2>
-            <p>Get to know us and what drives our passion for web design and development. Watch our story unfold in the video below.</p>
-            
-            <div role="region" aria-labelledby="video-heading">
-                <h3 id="video-heading">Our Story</h3>
-                <div class="video-container">
-                    <video controls aria-describedby="video-description" tabindex="0" loading="lazy" data-src="https://static.videezy.com/system/resources/previews/000/013/487/original/Water_66_-_4K_res.mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p id="video-description" role="document">This video provides an insight into our journey, values, and what sets us apart in the world of web design. Meet our team and see our work in action!</p>
-                </div>
+  <main class="position-relative">
+    {{- partial "profile/navbar.html" . }} 
+    <header>
+        <div class="container">
+            <div class="description panel bg-dark-subtle">
+            <div>
+                <p>ZERO</p>
             </div>
-        </section>
-      
-          
-        <div>
-            services we provide
+            </div>                              
+            <section class="panel bg-danger">
+            ONE 
+            </section>
+            <section class="panel bg-dark">
+            TWO
+            </section>
+            <section class="panel bg-gradient">
+            THREE
+            </section>
+            <section class="panel bg-info">
+            FOUR
+            </section>
+            <section class="panel bg-primary">
+            FIVE
+            </section>                  
         </div>
-        <div>Case study</div>
+    </header>
+          
+    <br>
+
+    <section aria-labelledby="about-us-heading">
+        <h2 id="about-us-heading" class="text-black">About Us</h2>
+        <p>Get to know us and what drives our passion for web design and development. Watch our story unfold in the video below.</p>
+        
+        <div role="region" aria-labelledby="video-heading">
+            <h3 id="video-heading">Our Story</h3>
+            <div class="video-container">
+                <video data-src="https://static.videezy.com/system/resources/previews/000/013/487/original/Water_66_-_4K_res.mp4"
+                controls aria-describedby="video-description" tabindex="0" loading="lazy">
+                    Your browser does not support the video tag.
+                </video>
+                <p id="video-description" role="document">
+                  This video provides an insight into our journey, values, and what sets us apart in the world of web design. Meet our team and see our work in action!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-projects" aria-labelledby="featured-projects-heading">
+      <h2 id="featured-projects-heading" class="text-black">Featured Projects</h2>
+      <p>Discover some of our most outstanding projects. Click on each project to learn more about our work and the impact we've made.</p>
+      
+      <div class="project-item" id="project1">
+          <h3><a href="#project1-details">E-commerce Website for XYZ</a></h3>
+          <p>Designed and developed a comprehensive e-commerce platform for XYZ, focusing on user experience and seamless transactions.</p>
+      </div>
+      
+      <div class="project-item" id="project2">
+          <h3><a href="#project2-details">Portfolio for ABC Artist</a></h3>
+          <p>Created a visually stunning portfolio for ABC Artist, highlighting their artwork and exhibitions.</p>
+      </div>
+      
+      <div class="project-item" id="project3">
+          <h3><a href="#project3-details">Business Directory for DEF Corp</a></h3>
+          <p>Built and managed a business directory website for DEF Corp, featuring custom configurations and advanced integrations.</p>
+      </div>
+      
+      <div class="project-item" id="project4">
+          <h3><a href="#project4-details">Corporate Website for GHI</a></h3>
+          <p>Developed a corporate website for GHI to enhance their online presence and attract new clients.</p>
+      </div>
+  </section>  
+                      
+  <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="text-black">Services We Provide</h2>
+      <p>Explore our range of professional services designed to meet your web development and digital marketing needs. Click on each service to learn more.</p>
+      
+      <div class="service-item" id="wordpress-service">
+          <h3><a href="wordpress-services.html">WordPress Development</a></h3>
+          <p>Specializing in creating custom WordPress websites that are visually appealing and highly functional. Expertise in theme development, plugin customization, and responsive design.</p>
+          <div class="related-projects">
+              <h4>Related Projects</h4>
+              <ul>
+                  <li><a href="#project1">Project 1: E-commerce Website</a></li>
+                  <li><a href="#project2">Project 2: Portfolio Website</a></li>
+              </ul>
+          </div>
+          <div class="technologies-used">
+              <h4>Technologies Used</h4>
+              <ul>
+                  <li>WordPress</li>
+                  <li>WooCommerce</li>
+                  <li>Elementor</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="service-item" id="brilliant-directories-service">
+          <h3><a href="brilliant-directories-services.html">Brilliant Directories</a></h3>
+          <p>Expertise in building and managing directory websites using Brilliant Directories. Offering custom configurations and advanced integrations to ensure smooth and efficient directory sites.</p>
+          <div class="related-projects">
+              <h4>Related Projects</h4>
+              <ul>
+                  <li><a href="#project3">Project 3: Business Directory</a></li>
+                  <li><a href="#project4">Project 4: Membership Directory</a></li>
+              </ul>
+          </div>
+          <div class="technologies-used">
+              <h4>Technologies Used</h4>
+              <ul>
+                  <li>Brilliant Directories</li>
+                  <li>Custom Plugins</li>
+                  <li>API Integrations</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="service-item" id="web-development-service">
+          <h3><a href="web-development-services.html">General Web Development</a></h3>
+          <p>Comprehensive services from front-end design to back-end programming, delivering websites that are fast, secure, and easy to manage.</p>
+          <div class="related-projects">
+              <h4>Related Projects</h4>
+              <ul>
+                  <li><a href="#project5">Project 5: Corporate Website</a></li>
+                  <li><a href="#project6">Project 6: Personal Blog</a></li>
+              </ul>
+          </div>
+          <div class="technologies-used">
+              <h4>Technologies Used</h4>
+              <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="service-item" id="digital-marketing-service">
+          <h3><a href="digital-marketing-services.html">Digital Marketing</a></h3>
+          <p>Coming Soon! Expanding our services to include digital marketing solutions, helping you reach a wider audience and achieve your business goals.</p>
+          <div class="future-services">
+              <h4>Stay Tuned!</h4>
+              <p>Our digital marketing services will include SEO, social media marketing, content creation, and more.</p>
+          </div>
+      </div>
+  </section>
+            
         <div>testimonial</div>
         <div>meet the team</div>
         <div>lets talk</div>
