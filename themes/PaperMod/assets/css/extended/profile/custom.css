@@ -16857,11 +16857,8 @@ textarea.form-control-lg {
     position: relative !important;
   }
 }
-.main-bg-container {
-  position: relative;
-  width: auto;
-  background-repeat: no-repeat;
-  background-size: 300vw 100vh;
+main {
+  margin-inline: 2.5rem;
 }
 
 .menu-dropdown {
@@ -16869,6 +16866,55 @@ textarea.form-control-lg {
   top: 100%;
   right: 0;
   left: 0;
+}
+
+.customer-preview video {
+  border-radius: 2rem;
+}
+
+video::-webkit-media-controls {
+  background-color: rgba(248, 249, 250, 0.0235294118); /* Change the background color of the controls */
+  color: #000; /* Change the color of the control icons */
+}
+
+.customer-testimonial {
+  font-weight: normal;
+}
+.customer-testimonial::before {
+  content: url("/img/quote-end.webp");
+  display: block;
+  margin-bottom: 10px;
+}
+
+.customer-info {
+  display: flex;
+  margin-block: 20px;
+}
+.customer-info .customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 10px;
+}
+.customer-info .customer-details .name {
+  font-weight: 500;
+}
+.customer-info .customer-details .position {
+  font-size: medium;
+  color: grey;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.customer-image {
+  width: 4em;
+  height: 4em;
+  background-size: cover;
+  background-image: url("/img/customer-image.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  border-radius: 100px;
 }
 
 nav {

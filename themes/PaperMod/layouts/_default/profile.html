@@ -1,27 +1,3 @@
-<!-- {{- define "main" }}
-
-<header class="page-header">
-    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-        {{ .Description }}
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-        {{- partial "translation_list.html" . -}}
-    </div>
-    {{- end }}
-</header> -->
-<!-- {{- end }}{{/* end main */}} -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +7,7 @@
 </head>
 <head>
     {{- partial "head.html" . }}
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>    
@@ -102,30 +79,6 @@ video {
     height: auto;
 }
 
-/* #services {
-    padding: 2em;
-    background-color: #f9f9f9;
-}
-#services-heading {
-    font-size: 2em;
-    margin-bottom: 1em;
-    text-align: center;
-}
-.service-item {
-    margin: 1em 0;
-    padding: 1em;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-.service-item h3 a {
-    text-decoration: none;
-    color: #0073e6;
-}
-.service-item p {
-    margin-top: 0.5em;
-} */
-
 #services {
     padding: 2em;
     background-color: #f9f9f9;
@@ -186,8 +139,6 @@ video {
 .project-item p {
     margin-top: 0.5em;
 }
-
-
 </style>
 
   <main class="position-relative">
@@ -260,86 +211,151 @@ video {
           <h3><a href="#project4-details">Corporate Website for GHI</a></h3>
           <p>Developed a corporate website for GHI to enhance their online presence and attract new clients.</p>
       </div>
-  </section>  
+    </section>  
                       
-  <section id="services" aria-labelledby="services-heading">
-      <h2 id="services-heading" class="text-black">Services We Provide</h2>
-      <p>Explore our range of professional services designed to meet your web development and digital marketing needs. Click on each service to learn more.</p>
-      
-      <div class="service-item" id="wordpress-service">
-          <h3><a href="wordpress-services.html">WordPress Development</a></h3>
-          <p>Specializing in creating custom WordPress websites that are visually appealing and highly functional. Expertise in theme development, plugin customization, and responsive design.</p>
-          <div class="related-projects">
-              <h4>Related Projects</h4>
-              <ul>
-                  <li><a href="#project1">Project 1: E-commerce Website</a></li>
-                  <li><a href="#project2">Project 2: Portfolio Website</a></li>
-              </ul>
-          </div>
-          <div class="technologies-used">
-              <h4>Technologies Used</h4>
-              <ul>
-                  <li>WordPress</li>
-                  <li>WooCommerce</li>
-                  <li>Elementor</li>
-              </ul>
-          </div>
-      </div>
-      
-      <div class="service-item" id="brilliant-directories-service">
-          <h3><a href="brilliant-directories-services.html">Brilliant Directories</a></h3>
-          <p>Expertise in building and managing directory websites using Brilliant Directories. Offering custom configurations and advanced integrations to ensure smooth and efficient directory sites.</p>
-          <div class="related-projects">
-              <h4>Related Projects</h4>
-              <ul>
-                  <li><a href="#project3">Project 3: Business Directory</a></li>
-                  <li><a href="#project4">Project 4: Membership Directory</a></li>
-              </ul>
-          </div>
-          <div class="technologies-used">
-              <h4>Technologies Used</h4>
-              <ul>
-                  <li>Brilliant Directories</li>
-                  <li>Custom Plugins</li>
-                  <li>API Integrations</li>
-              </ul>
-          </div>
-      </div>
-      
-      <div class="service-item" id="web-development-service">
-          <h3><a href="web-development-services.html">General Web Development</a></h3>
-          <p>Comprehensive services from front-end design to back-end programming, delivering websites that are fast, secure, and easy to manage.</p>
-          <div class="related-projects">
-              <h4>Related Projects</h4>
-              <ul>
-                  <li><a href="#project5">Project 5: Corporate Website</a></li>
-                  <li><a href="#project6">Project 6: Personal Blog</a></li>
-              </ul>
-          </div>
-          <div class="technologies-used">
-              <h4>Technologies Used</h4>
-              <ul>
-                  <li>HTML/CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-              </ul>
-          </div>
-      </div>
-      
-      <div class="service-item" id="digital-marketing-service">
-          <h3><a href="digital-marketing-services.html">Digital Marketing</a></h3>
-          <p>Coming Soon! Expanding our services to include digital marketing solutions, helping you reach a wider audience and achieve your business goals.</p>
-          <div class="future-services">
-              <h4>Stay Tuned!</h4>
-              <p>Our digital marketing services will include SEO, social media marketing, content creation, and more.</p>
-          </div>
-      </div>
-  </section>
+    <section id="services" aria-labelledby="services-heading">
+        <h2 id="services-heading" class="text-black">Services We Provide</h2>
+        <p>Explore our range of professional services designed to meet your web development and digital marketing needs. Click on each service to learn more.</p>
+        
+        <div class="service-item" id="wordpress-service">
+            <h3><a href="wordpress-services.html">WordPress Development</a></h3>
+            <p>Specializing in creating custom WordPress websites that are visually appealing and highly functional. Expertise in theme development, plugin customization, and responsive design.</p>
+            <div class="related-projects">
+                <h4>Related Projects</h4>
+                <ul>
+                    <li><a href="#project1">Project 1: E-commerce Website</a></li>
+                    <li><a href="#project2">Project 2: Portfolio Website</a></li>
+                </ul>
+            </div>
+            <div class="technologies-used">
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>WordPress</li>
+                    <li>WooCommerce</li>
+                    <li>Elementor</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="service-item" id="brilliant-directories-service">
+            <h3><a href="brilliant-directories-services.html">Brilliant Directories</a></h3>
+            <p>Expertise in building and managing directory websites using Brilliant Directories. Offering custom configurations and advanced integrations to ensure smooth and efficient directory sites.</p>
+            <div class="related-projects">
+                <h4>Related Projects</h4>
+                <ul>
+                    <li><a href="#project3">Project 3: Business Directory</a></li>
+                    <li><a href="#project4">Project 4: Membership Directory</a></li>
+                </ul>
+            </div>
+            <div class="technologies-used">
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>Brilliant Directories</li>
+                    <li>Custom Plugins</li>
+                    <li>API Integrations</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="service-item" id="web-development-service">
+            <h3><a href="web-development-services.html">General Web Development</a></h3>
+            <p>Comprehensive services from front-end design to back-end programming, delivering websites that are fast, secure, and easy to manage.</p>
+            <div class="related-projects">
+                <h4>Related Projects</h4>
+                <ul>
+                    <li><a href="#project5">Project 5: Corporate Website</a></li>
+                    <li><a href="#project6">Project 6: Personal Blog</a></li>
+                </ul>
+            </div>
+            <div class="technologies-used">
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="service-item" id="digital-marketing-service">
+            <h3><a href="digital-marketing-services.html">Digital Marketing</a></h3>
+            <p>Coming Soon! Expanding our services to include digital marketing solutions, helping you reach a wider audience and achieve your business goals.</p>
+            <div class="future-services">
+                <h4>Stay Tuned!</h4>
+                <p>Our digital marketing services will include SEO, social media marketing, content creation, and more.</p>
+            </div>
+        </div>
+    </section>
             
-        <div>testimonial</div>
-        <div>meet the team</div>
-        <div>lets talk</div>
+    <br>
+    <br>
+    <div>
+        <h2 class="text-black fw-bolder">What Our Clients Say About Us</h2>
+        <br>
+        <div class="slider" aria-live="polite">
+            <div>
+                <p class="customer-testimonial">Thanks to Muvi, we achieved our goals with ease. Their platform provided clear user feedback and usage data, helping us gain 15,000 web registrations, 10,000 Android users, and 5,000 iOS users. The robust analytics in Muvi’s content management system empowered us to make informed decisions, driving streaming for audio and video. We are highly satisfied with Muvi’s services.
+                </p>
+                <div class="customer-info">
+                    <span class="customer-image" loading="lazy"></span>
+                    <div class="customer-details">
+                        <span class="name">John Doe</span>
+                        <span class="position">CEO of Company XYZ</span> 
+                    </div>
+                </div>
+                <div class="customer-preview">
+                    <video data-src="https://static.videezy.com/system/resources/previews/000/050/789/original/Hispanic-Woman-Voter-Puts-on-I-Voted-Sticker.mp4" controls aria-label="Customer testimonial video" tabindex="0" loading="lazy"></video>
+                </div>
+            </div>
+            <div>
+                <p class="customer-testimonial">Thanks to Muvi, we achieved our goals with ease. Their platform provided clear user feedback and usage data, helping us gain 15,000 web registrations, 10,000 Android users, and 5,000 iOS users. The robust analytics in Muvi’s content management system empowered us to make informed decisions, driving streaming for audio and video. We are highly satisfied with Muvi’s services.
+                </p>
+                <div class="customer-info">
+                    <span class="customer-image" loading="lazy"></span>
+                    <div class="customer-details">
+                        <span class="name">John Doe</span>
+                        <span class="position">CEO of Company XYZ</span> 
+                    </div>
+                </div>
+                <div class="customer-preview">
+                    <video data-src="https://static.videezy.com/system/resources/previews/000/035/789/original/BS011.mp4" controls aria-label="Customer testimonial video" tabindex="0" loading="lazy"></video>
+                    
+                </div>
+            </div>  
+            <div>
+                <p class="customer-testimonial">Thanks to Muvi, we achieved our goals with ease. Their platform provided clear user feedback and usage data, helping us gain 15,000 web registrations, 10,000 Android users, and 5,000 iOS users. The robust analytics in Muvi’s content management system empowered us to make informed decisions, driving streaming for audio and video. We are highly satisfied with Muvi’s services.
+                </p>
+                <div class="customer-info">
+                    <span class="customer-image" loading="lazy"></span>
+                    <div class="customer-details">
+                        <span class="name">John Doe</span>
+                        <span class="position">CEO of Company XYZ</span> 
+                    </div>
+                </div>
+                <div class="customer-preview">
+                    <video data-src="https://static.videezy.com/system/resources/previews/000/042/802/original/Gen-Z-Man-Scrolling-on-Phone.mp4" controls aria-label="Customer testimonial video" tabindex="0" loading="lazy"></video>
+                </div>
+            </div>
+            <div>
+                <p class="customer-testimonial">Thanks to Muvi, we achieved our goals with ease. Their platform provided clear user feedback and usage data, helping us gain 15,000 web registrations, 10,000 Android users, and 5,000 iOS users. The robust analytics in Muvi’s content management system empowered us to make informed decisions, driving streaming for audio and video. We are highly satisfied with Muvi’s services.
+                </p>
+                <div class="customer-info">
+                    <span class="customer-image" loading="lazy"></span>
+                    <div class="customer-details">
+                        <span class="name">John Doe</span>
+                        <span class="position">CEO of Company XYZ</span> 
+                    </div>
+                </div>
+                <div class="customer-preview">
+                    <video data-src="https://static.videezy.com/system/resources/previews/000/053/147/original/walking-inside-temple5.mp4" controls aria-label="Customer testimonial video" tabindex="0" loading="lazy"></video>
+                </div>
+            </div>
+        </div>   
+    </div> 
+
+    <div>meet the team</div>
+    <div>lets talk</div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis numquam neque vero tenetur quas inventore totam earum sint laborum quam excepturi animi nulla obcaecati voluptates pariatur, rem quia. Numquam, ducimus?
         Saepe sint debitis aut fuga. Asperiores ipsa architecto optio est mollitia vitae itaque obcaecati earum eos. Doloremque temporibus tenetur, neque cumque tempora vero sint aperiam maxime, at, laudantium aspernatur! Similique.
         Officia sequi deserunt ex fugit ad. Esse saepe animi, et enim vero tenetur totam corrupti sunt, deleniti aperiam dolore similique? Tempora excepturi vitae nostrum quibusdam nisi? In vitae nihil ratione.

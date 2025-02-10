@@ -74,6 +74,10 @@
 {{- $stylesheet := "" -}} <!-- Declare the variable outside -->
 {{- if (eq .Layout `profile`) -}} 
   {{- $stylesheet = resources.Match "css/extended/profile/custom.css" | resources.Concat "abssets/css/stylesheet.css" -}}
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 {{- else -}}
   {{- $stylesheet = (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css" -}}
 {{- end -}}
@@ -124,7 +128,6 @@ resources.Minify }}
 {{- range .AllTranslations -}}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-C8oHCUM4bDBqmi+GXg5vQCOjriNXzean+2n2TzTDQoNJDWpjzkkJv5Nl0ZMEQoCKpXrRHpAFztPmClcPCuRdvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="/css/prism.css" />
 <noscript>
