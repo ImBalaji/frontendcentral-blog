@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A single-page website with 4 sections and a footer.">
+    <title>Balaji | WordPress Websites</title>
+    
+    <!-- CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, section, footer {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .skip-to-content:focus {
+            top: 10px;
+        }
+
+    </style>
+    {{- partial "head.html" . }}
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header>        
+        {{- partial "offering/navbar.html" . }} 
+    </header>
+
+    <main id="main-content">
+        <section id="section1" aria-labelledby="section1-heading" class="text-center">
+            <h2 id="section1-heading">Hi!👋 I'm Balaji</h2>
+            <p class="">I collaborate with small businesses and agencies to create visually appealling, responsive, and fast-loading websites.</p>
+            <button>View Recent Projects</button>
+        </section>
+        
+        <section id="project" aria-labelledby="section2-heading">
+            <h2 id="section2-heading">Recent Projects</h2>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner container">  
+                  <div class="carousel-item active">
+                    <div class="proj-desc">
+                        <h1>UsTheWorld</h1>  
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam maxime praesentium voluptates aspernatur fugit molestiae, earum minima reiciendis quibusdam eveniet dolor, modi doloremque eaque quas dolores consequatur ratione optio.</div>                 
+                    </div>
+                    <div class="img-container">
+                        <img src="/img/ustheworld-portfolio.webp" alt="">
+                        <div class="overlay-top"></div>
+                        <div class="overlay-bottom"></div>
+                    </div>                    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="proj-desc">
+                        <h1>Lalaela2</h1>  
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam maxime praesentium voluptates aspernatur fugit molestiae, earum minima reiciendis quibusdam eveniet dolor, modi doloremque eaque quas dolores consequatur ratione optio.</div>                 
+                    </div>
+                    <div class="img-container">
+                        <img src="/img/lalaela_portfolio-1.png" alt="">
+                        <div class="overlay-top"></div>
+                        <div class="overlay-bottom"></div>
+                    </div> 
+                  </div>
+                  <div class="carousel-item">
+                    <div class="proj-desc">
+                        <h1>Lalaela3</h1>  
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ullam maxime praesentium voluptates aspernatur fugit molestiae, earum minima reiciendis quibusdam eveniet dolor, modi doloremque eaque quas dolores consequatur ratione optio.</div>                 
+                    </div>
+                    <div class="img-container">
+                        <img src="/img/lalaela_portfolio-1.png" alt="">
+                        <div class="overlay-top"></div>
+                        <div class="overlay-bottom"></div>
+                    </div> 
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>    
+        </section>
+        
+        <section id="experience" aria-labelledby="section3-heading">
+            <h2 id="section3-heading">Skills and Experience</h2>
+            <div class="expertise">
+                <div class="skills">
+                    <div class="skills-head">Skills</div>
+                    <div class="skills-sub">
+                        <div class="skills-subhead">Web Design & Development</div>
+                        <ul class="skills-listing">
+                            <li>Brilliant Directories</li>
+                            <li>WordPress</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Responsive Web Design</li>
+                            <li>MySQL</li>
+                            <li>jQuery</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="experience">
+                    <div class="experience-head">Experience</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="service" aria-labelledby="section4-heading">
+            <h2 id="section4-heading">Integral Web Offerings for Peace of Mind</h2>
+            <div>Need to leverage your content with a dynamic website?</div>
+                <div>Is your template-based website due for a revamp?</div>
+                <div>A broken plugin is messing with your site?</div>
+                
+                <div>I've Got You Covered! 👍</div>
+                <br><br>
+             
+            <div class="container text-center overflow-hidden">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="offering-box">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="offering-box">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="offering-box">
+                        </div>
+                    </div>
+             
+                    <div class="col">
+                        <div class="offering-box">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="offering-box">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="offering-box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{ partialCached "offering/footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}    
+</body>
+</html>

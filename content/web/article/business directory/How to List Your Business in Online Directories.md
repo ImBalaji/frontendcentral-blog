@@ -6,6 +6,12 @@ description: "Learn how to list your business in online directories to boost vis
 tags: ["Business Directories"]
 keywords: ["List your business","Online directories","Online business lists","Business directory SEO","Optimize business listing","Boost business visibility","Claim business listing","Directory website tips","Local business directories","Brilliant Directories optimization"]
 draft: false
+metaAbout:
+    name: "metaAbout"
+    sameAs: "metaAbout"
+metaMentions:
+    name: "metaMentions"
+    sameAs: "metaMentions"
 # images: 
 # weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]

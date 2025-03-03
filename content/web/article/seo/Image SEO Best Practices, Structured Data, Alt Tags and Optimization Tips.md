@@ -7,12 +7,13 @@ tags: ["SEO", "SEO Best Practices", "Image SEO"]
 keywords: ["image SEO", "image SEO best practices", "alt tags SEO", "image compression", "Google Images optimization", "image search optimization", "image SEO tips", "structured data for images", image SEO tools"]
 draft: false
 metaAbout:
-  name:
-  sameAs:
+  id: "https://en.wikipedia.org/wiki/Search_engine_optimization"
+  name: "Image SEO"
+  sameAs: "https://schema.org/CreativeWork"
 metaMentions:
   id: "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata"
-  name: 
-  sameAs:
+  name: "Image Structured Data"
+  sameAs: "https://schema.org/ImageObject"
 # images: 
 # weight: 1   #Post can be pinned/ displayed top on the list by adding a weight=<num> var to page-variables
 # aliases: ["/first"]

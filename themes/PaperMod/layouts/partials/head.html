@@ -73,12 +73,14 @@
 {{- /* Add extended css after theme style */ -}}
 
 {{- $stylesheet := "" -}} <!-- Declare the variable outside -->
-{{- if (eq .Layout `profile`) -}} 
+{{- if (eq .Layout "profile") -}}
   {{- $stylesheet = resources.Match "css/extended/profile/custom.css" | resources.Concat "abssets/css/stylesheet.css" -}}
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> 
+{{- else if (eq .Layout "offerings") -}}
+    {{- $stylesheet = resources.Match "css/extended/offering/custom.css" | resources.Concat "abssets/css/stylesheet.css" -}}
 {{- else -}}
   {{- $stylesheet = (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css" -}}
 {{- end -}}
